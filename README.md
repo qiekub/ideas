@@ -9,7 +9,7 @@ Qiekub is a not-for-profit project to help everyone flourish.
 Qiekub means
 "You belong!", "You are welcome!",
 "We are one family!", "We are a team!".
-The word Qiekub is based on the chiniese word 不客气. It means "You are welcome" and "Gern geschen". So keep in mind that the original meaning is a bit different.
+The word Qiekub is based on the chiniese word 不客气. It means "You are welcome" and "Gern geschehen". So keep in mind that the original meaning is a bit different.
 
 
 ## The Services
