@@ -805,18 +805,13 @@ https://github.com/maxlath/wikibase-sdk/blob/HEAD/docs/get_entities.md#by-ids
 
 
 
+——————————————————————————————————————————
 
+## Accuracy of latitude and longitude?
+https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude
+(Just so this is saved somewhere!)
 
-
-
-
-
-
-
-
-
-
-
+——————————————————————————————————————————
 
 
 
