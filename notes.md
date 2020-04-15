@@ -753,7 +753,8 @@ https://ilga.org/trans-legal-mapping-report
 https://de.wikipedia.org/wiki/Liste_von_L%C3%A4ndern_nach_pers%C3%B6nlicher_Freiheit#Liste
 
 
-
+### Information about all countries in JSON:
+https://restcountries.eu/rest/v2/all
 
 
 
