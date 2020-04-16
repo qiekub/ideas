@@ -4,12 +4,14 @@
 The map should present queer-youth-centers and other queer places.
 
 ### TODO:
+- Map tiles in specific languages
+	❓Is it possible to have raster-tiles dynamically? So that TThe country-names fit the users-language and dark-or-light-mode?
 - Edit / Questions
-	- How can people add sources to their answers? #design #ui_flow
+	- ❓How can people add sources/references to their answers? #design #ui_flow
 	- ❓How do I prevent spam?
 		A cookie / sessionID / userID / fingerprint / ...?
 		Are the better ways? / More privacy-optimistic ways?
-	- More Questions:
+	- Add more Questions:
 		- What type of place is this?
 			I already have a list of amenities(/presets) used by the OpenStreetMap-Editor (iD).
 		- For whom is this place primarily intended?
