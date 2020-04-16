@@ -6,7 +6,7 @@ The map should present queer-youth-centers and other queer places.
 ### TODO:
 - Edit / Questions
 	- How can people add sources to their answers? #design #ui_flow
-	- ❓ How do I prevent spam?
+	- ❓How do I prevent spam?
 		A cookie / sessionID / userID / fingerprint / ...?
 		Are the better ways? / More privacy-optimistic ways?
 	- More Questions:
@@ -36,13 +36,13 @@ The map should present queer-youth-centers and other queer places.
 	- Thank-You
 	- List of links to other maps.
 - Add places from other maps. #import
-	- ❓ Has Mapbox experience with importing and managing datasets?
+	- ❓Has Mapbox experience with importing and managing datasets?
 	- Check for permissions. Am I alowed to just add them?
 - Advertisment
 	- The website could dynamically generate a DIN-A4 PDF for any place, to place in the places window. (With QR-Code and stuff)
 	- A link-image to put on the website of the places.
 	- A ways to embed the map on the websites.
-- ❓ How should I name the website?
+- ❓How should I name the website?
 	- The names QueerMap and OpenQueerMap are already taken. (QueerMap for something different.)
 	- Maybe: Change the domain from queermap.qiekub.com to map.qiekub.com. So any further projects can be found und qiekub.com.
 
