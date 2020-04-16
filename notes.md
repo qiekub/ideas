@@ -28,13 +28,40 @@ backend
 
 ----------------------------
 
-A similar project:
+
+
+
+
+
+
+
+
+
+
+
+## A similar project:
 
 https://www.queeringthemap.com/
 (Is for personal experiences only.)
 
 https://wiki.openstreetmap.org/wiki/OpenQueerMap
 (Does not exist anymore. And was only in German.)
+
+http://www.queerstroemung.de/queermap-2/
+Queere Orte in Friesland-Wilhelmshaven-Wittmund.
+Hier der direkte Link zur Google-Karte: https://www.google.com/maps/d/u/0/viewer?mid=1zlXT6xH1eKda6nCreTYu7qAhIMo&ll=53.39108694600867%2C7.711015650000036&z=9
+
+
+
+
+
+
+
+
+
+
+
+
 
 ----------------------------
 
