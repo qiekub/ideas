@@ -1,0 +1,60 @@
+# Similar projects:
+
+## "Queering the Map"
+https://www.queeringthemap.com/
+Is for personal experiences only.
+
+## "OpenQueerMap"
+https://wiki.openstreetmap.org/wiki/OpenQueerMap
+Does not exist anymore. And was only in German.
+
+## Queer places in Friesland-Wilhelmshaven-Wittmund, Germany:
+http://www.queerstroemung.de/queermap-2/
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1zlXT6xH1eKda6nCreTYu7qAhIMo&ll=53.39108694600867%2C7.711015650000036&z=9
+
+## Queer places in Hessen, Germany:
+https://www.gjh.de/frog/queer-in-hessen/
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1_Isnz2GAAavOqkkgFVB-nyAMIZI&ll=50.603440945088664%2C8.953811299999984&z=8
+
+## Queer places in Dortmund, Germany:
+http://map.slado.de/ (Stand de Karte 22.01.2015)
+
+## Historic queer places in Los Angeles (1):
+https://queermaps.org/
+
+## Historic queer places in Los Angeles (2):
+https://www.disguisedruins.com/
+
+## Queer places in Edinburgh:
+https://www.lgbthealth.org.uk/queering-the-map-of-edinburgh/
+PDF Version: https://www.lgbthealth.org.uk/wp-content/uploads/2019/04/Queering-the-Map-of-Edinburgh.pdf
+Interactive: https://www.arcgis.com/apps/Shortlist/index.html?appid=d36c05e8a49d4df6b9bd38244853a03f
+
+## LGBT youth groups in Scotland:
+https://www.lgbtyouth.org.uk/groups-and-support/find-local-youth-groups/
+
+## Data of historic gay-guides:
+http://www.mappingthegayguides.org
+Datasets on Github: https://github.com/MappingtheGayGuides
+
+## Queer places in St. Lois, USA:
+https://library.wustl.edu/mapping-lgbtq-st-louis-online/
+arcgis map: https://wustl.maps.arcgis.com/apps/MapSeries/index.html?appid=19fbb02a5c2f40eebfacc794aa3372dd
+
+## Multiple maps of the US and New York:
+https://www.allwevegot.org/research/maps-maps-all-the-queer-maps/
+
+## Popular places but not neccessary primary queer places:
+https://travelsofadam.com/gay-travel/
+
+## Historic queer places in Montreal:
+https://storymaps.arcgis.com/stories/fa26398f934c4f7484f8eedc2dac3b03
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/embed?mid=1SS77K0liNuThK_kfkQ5408nZ_UuG5XXF&ll=45.51422448809261%2C-73.5853932&z=14
+
+## History queer places in New York:
+https://www.nyclgbtsites.org/
+
+## Map of LGBTQ resources at US-Universities:
+https://www.lgbtcampus.org/lgbt-map
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1uYlF3milN1euuDcLS_iXLncpsHQ&ll=39.22637344002685%2C-61.28580020000004&z=2
+
