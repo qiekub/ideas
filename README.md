@@ -15,8 +15,8 @@ The word Qiekub is based on the chiniese word 不客气. It means "You are welco
 ## The Services
 - Api
 
-- Map (Youthcenters and other places)
-- Help (Help-Lines)
+- Map (youthcenters and other places)
+- Help (help-lines, chat-services and face2face-consulting)
 
 - News
 - Events

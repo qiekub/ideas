@@ -53,7 +53,7 @@ The map should present queer-youth-centers and other queer places.
 
 ## Help
 [help.qiekub.com]
-Help-Lines, Chat Services and consulting
+help-lines, chat-services and face2face-consulting
 
 ## Maybe ther pages
 - News
