@@ -21,6 +21,7 @@ The map should present queer-youth-centers and other queer places.
 		- On which date/year did this place close? #follow_up_question
 	- A way to suggest new questions.
 	- It currently isn't possible to choose a location on small devices. #mobile #ui
+	- What about photos?
 - Filter
 	- For which category/tribe/gender/... the place is.
 	- If the place is spam or not.
