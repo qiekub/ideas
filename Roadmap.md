@@ -50,7 +50,12 @@ The map should present queer-youth-centers and other queer places.
 - It should be a non-profit!!! (Verein or gUG)
 
 ## Help
+[help.qiekub.com]
 Help-Lines, Chat Services and consulting
+
+## Maybe ther pages
+- News
+- Events
 
 ## Advertisment for Qiekub
 - Social Media Channels
