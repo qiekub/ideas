@@ -27,3 +27,46 @@ To many map combinations.
 
 The map is currently in dark and light mode and with the local names. (I can't read most place-names in hindu or chiniese.)
 
+
+## Questions / Information
+What's information should be displayed?
+
+
+
+
+# Follow up mail to Nicki
+
+
+Hi Nicki,
+
+THANKS for the call!
+
+I just wanted to follow up with the most important open question, so they wont be forgotten:
+
+Do you have any suggestions on how to prevent spam entries or over editing?
+Particular with the topic of privacy in mind.
+
+Has Mapbox best practices for importing datasets?
+
+I want the map-tiles to use the users browser language.
+Would I need to create a different style for every language or is it possible to generate the different raster-tiles from one style? Like by sending a get-parameter in the style-url.
+
+I look forward to your answers!
+
+It was awesome talking to you and I'd love to here your feedback while the project progresses.
+
+Best,
+Thomas
+
+
+PS.: You can also reach me on WhatsApp and any other chat-services if you ever have a quick suggestion or whatever. Here's my phonenumber: 0049015758451616
+
+
+
+
+
+
+
+
+
+
