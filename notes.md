@@ -821,6 +821,7 @@ https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-
 
 
 
+Donations link for every place
 
 
 
