@@ -1,9 +1,9 @@
 # Datenschutz
 
 Um qualitativ hochwertige Daten zu gewährleisten, speichern wir einen Cookie und senden ein paar Informationen über Dich an unseren Server. Diese Informationen sind anonym und können nicht auf dich zurück geführt werden.
-Details dazu findest du in unserer Datenschutzbestimmung.
+Details dazu findest du in unserer Datenschutzerklärung.
 
-Wenn du auf _Weiter_ klickst, stimmst du unserer Datenschutzbestimmung zu.
+Wenn du auf _Weiter_ klickst, stimmst du unserer Datenschutzerklärung zu.
 
        [Abbrechen] [Weiter]
 
