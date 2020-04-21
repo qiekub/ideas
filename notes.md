@@ -912,6 +912,7 @@ https://wiki.openstreetmap.org/wiki/Permanent_ID
 https://wiki.openstreetmap.org/wiki/Category:World_wide_external_reference_tag
 https://wiki.openstreetmap.org/wiki/Key:iata
 https://wiki.openstreetmap.org/wiki/Key:wikidata
+https://wiki.openstreetmap.org/wiki/Key:ref
 
 https://w.wiki/GbF
 https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20%3Fitem%20%3FOSM_key%20%3Fformatter_URL%20WHERE%20%7B%0A%20%20%7B%20%3Fitem%20wdt%3AP1282%20%3FOSM_key.%20%7D%0A%20%20FILTER(STRSTARTS(%3FOSM_key%2C%20'Key%3A'))%20.%0A%20%20FILTER(%3FOSM_key%20NOT%20IN%20('Key%3Aimage'%2C%20'Key%3Aurl'%2C%20'Key%3Awebsite'%2C%20'Key%3Awikidata'%2C%20'Key%3Awikimedia_commons'))%20.%0A%0A%20%20%7B%0A%20%20%20%20%7B%20%3Fitem%20wdt%3AP1630%20%3Fformatter_URL.%20%7D%0A%20%20%20%20UNION%0A%20%20%20%20%7B%20%3Fitem%20wdt%3AP3303%20%3Fformatter_URL.%20%7D%0A%20%20%7D%0A%7D%0A
