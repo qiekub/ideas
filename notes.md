@@ -839,18 +839,86 @@ Donations link for every place
 
 # How to match places from different sources.
 
-## If possible, use the following list of unique ids:
-1. osm-node-index
-2. wikidata
-3. wikipedia
-4. businuess-wiki-data
-5. Lng+Lat match up to the fifths or sixs decimal place
+If possible, use the following list to find a matching place.
+The place with the highest score is the best match.
+
+## unique ids that can change very frequently but stay the same if nothing changed (unique!)
+(score: ∞)
+- osm-id
+
+## unique references that won't changed (unique!)
+(score: 6)
+- wikidata
+- iata
+- icao
+- ref:??? (not "ref", but: ref:whc, ref:isil, ref:dhis2, ref:vatin, ref:wmo, ref:wigos, ref:bag, ref:bufa, ...)
+
+## geo information that change seldom
+(score: 5)
+- Lng+Lat match up to the sixs decimal place
+- full addr:??? match
+
+## urls that change rarely and are mostly unique (not neccessarly unique!)
+(score: 4)
+- wikipedia
+- website
+- facebook
+- twitter
+- phonenumber
+- email
+
+## properties that can change but identify a place (not neccessarly unique!)
+(score: 3)
+- official_name
+- long_name
+- name
+- short_name
+- alt_name
+
+## vague properties that can eventually identify (not neccessarly unique!)
+(score: 2)
+- wikimedia_commons
+- mapillary
+- flickr
+- url
+
+- int_ref // international
+- nat_ref // national
+- reg_ref // regional
+- loc_ref // local
+
+- icn_ref // international cycle route
+- ncn_ref // national cycle route
+- rcn_ref // regional cycle route
+- lcn_ref // local cycle route
+
+## properties that identify a group of places (not unique but can be in combination!)
+(score: 1)
+- ???:wikidata (operator:wikidata, network:wikidata, brand:wikidata, architect:wikidata, artist:wikidata, species:wikidata, subject:wikidata, name:etymology:wikidata, ...)
+- operator
+- network
+- brand
+- architect
+- artist
+- species
+- subject
+- name:etymology
+- flag:wikidata
+- flag
+- cycle_network
+
+## any other properties
+- ???
 
 
 
+https://wiki.openstreetmap.org/wiki/Permanent_ID
+https://wiki.openstreetmap.org/wiki/Category:World_wide_external_reference_tag
+https://wiki.openstreetmap.org/wiki/Key:iata
+https://wiki.openstreetmap.org/wiki/Key:wikidata
 
-
-
+https://w.wiki/GbF
+https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20%3Fitem%20%3FOSM_key%20%3Fformatter_URL%20WHERE%20%7B%0A%20%20%7B%20%3Fitem%20wdt%3AP1282%20%3FOSM_key.%20%7D%0A%20%20FILTER(STRSTARTS(%3FOSM_key%2C%20'Key%3A'))%20.%0A%20%20FILTER(%3FOSM_key%20NOT%20IN%20('Key%3Aimage'%2C%20'Key%3Aurl'%2C%20'Key%3Awebsite'%2C%20'Key%3Awikidata'%2C%20'Key%3Awikimedia_commons'))%20.%0A%0A%20%20%7B%0A%20%20%20%20%7B%20%3Fitem%20wdt%3AP1630%20%3Fformatter_URL.%20%7D%0A%20%20%20%20UNION%0A%20%20%20%20%7B%20%3Fitem%20wdt%3AP3303%20%3Fformatter_URL.%20%7D%0A%20%20%7D%0A%7D%0A
 
 
 
