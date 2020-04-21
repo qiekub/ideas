@@ -33,10 +33,7 @@ backend
 
 
 
-
-
-
-----------------------------
+——————————————————————————————————————————
 
 add / update-proposal {
 	existing_id: ID,
@@ -99,7 +96,7 @@ https://eu1.locationiq.com/v1/search.php?key=66291d9b656090&limit=1&format=json&
 
 
 
-------------------------
+——————————————————————————————————————————
 
 
 
@@ -117,7 +114,7 @@ amenity=pub;bar;
 
 
 
-------------------------
+——————————————————————————————————————————
 
 https://wiki.openstreetmap.org/wiki/Key:lgbtq
 https://wiki.openstreetmap.org/wiki/Key:gay
@@ -172,7 +169,7 @@ out;
 
 
 
-------------------------
+——————————————————————————————————————————
 
 
 
