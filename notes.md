@@ -127,41 +127,38 @@ https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
 
 https://overpass-api.de/api/interpreter?data=[bbox:50.6,7.0,50.8,7.3][out:json][timeout:25];(node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];node[~"^lgbtq.*$"~"."];node[~"^gay.*$"~"."];node[~"^fetish.*$"~"."];);out;
 
-[bbox:90,-180,-90,180]
+	[bbox:90,-180,-90,180]
+
+	// [bbox:50.6,7.0,50.8,7.3][out:json][timeout:25];(node[~"."~"lgbt"];node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];node[~"^lgbtq.*$"~"."];node[~"^gay.*$"~"."];node[~"^fetish.*$"~"."];);out;
+	// ----------
+	[bbox:50.6,7.0,50.8,7.3]
+	[out:json]
+	[timeout:25]
+	;
+	(
+		node[~"."~"lgbt"];
+		node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];
+		node[~"^lgbtq.*$"~"."];
+		node[~"^gay.*$"~"."];
+		node[~"^fetish.*$"~"."];
+	);
+	out;
 
 
 
-
-// [bbox:50.6,7.0,50.8,7.3][out:json][timeout:25];(node[~"."~"lgbt"];node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];node[~"^lgbtq.*$"~"."];node[~"^gay.*$"~"."];node[~"^fetish.*$"~"."];);out;
-// ----------
-[bbox:50.6,7.0,50.8,7.3]
-[out:json]
-[timeout:25]
-;
-(
-  node[~"."~"lgbt"];
-  node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];
-  node[~"^lgbtq.*$"~"."];
-  node[~"^gay.*$"~"."];
-  node[~"^fetish.*$"~"."];
-);
-out;
-
-
-
-// [bbox:50.6,7.0,50.8,7.3][out:json][timeout:25];(node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];node[~"^lgbtq.*$"~"."];node[~"^gay.*$"~"."];node[~"^fetish.*$"~"."];);out;
-// ----------
-[bbox:50.6,7.0,50.8,7.3]
-[out:json]
-[timeout:25]
-;
-(
-  node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];
-  node[~"^lgbtq.*$"~"."];
-  node[~"^gay.*$"~"."];
-  node[~"^fetish.*$"~"."];
-);
-out;
+	// [bbox:50.6,7.0,50.8,7.3][out:json][timeout:25];(node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];node[~"^lgbtq.*$"~"."];node[~"^gay.*$"~"."];node[~"^fetish.*$"~"."];);out;
+	// ----------
+	[bbox:50.6,7.0,50.8,7.3]
+	[out:json]
+	[timeout:25]
+	;
+	(
+		node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];
+		node[~"^lgbtq.*$"~"."];
+		node[~"^gay.*$"~"."];
+		node[~"^fetish.*$"~"."];
+	);
+	out;
 
 
 
@@ -372,123 +369,123 @@ or: [{and}, {and}]
 
 
 
-db.getCollection('Answers').aggregate([
-	// START get answers
-	/*{$match:{
-		"properties.forID": ObjectId("5e743d99d083985272c9bf99"),
-	}},*/
-	{$sort:{
-		"metadata.lastModified": -1
-	}},
-	{$group:{
-		_id: {$concat:[
-			{$toString:"$properties.forID"},
-			"_",
-			{$toString:"$properties.questionID"},
-		]},
-		docs: {$push:"$$ROOT"},
-	}},
-	{$project:{
-		docs: {$slice:["$docs",0,10]}
-	}},
-	{$unwind:"$docs"},
-	{$replaceRoot:{newRoot:"$docs"}},
-	// END get answers
-	
-	
-	// START group answers
-	{$group:{
-		_id: {$concat:[
-			{$toString:"$properties.forID"},
-			"_",
-			{$toString:"$properties.questionID"},
-			"_",
-			{$toString:"$properties.answer"}
-		]},
-		forID: { $first: "$properties.forID" },
-		questionID: { $first: "$properties.questionID" },
-		answer: { $first: "$properties.answer" },
-		count: { $sum: 1 },
-	}},
-	{$sort:{
-		count: -1,
-		_id: 1,
-	}},
-	{$group:{
-		_id: {$concat:[
-			{$toString:"$forID"},
-			"_",
-			{$toString:"$questionID"},
-		]},
-		forID: { $first: "$forID" },
-		questionID: { $first: "$questionID" },
-		answer: { $first: "$answer" },
-		this_answer_count: { $first: "$count" },
-		all_answers_count: { $sum: "$count" },
-	}},
-	{$addFields:{
-		confidence: {$divide:["$this_answer_count",{$max:[10,"$all_answers_count"]}]}
-	}},
-	// END group answers
-	
-	
-	// START compile tags
-	{$lookup:{
-		from: "Questions",
-		localField: "questionID",
-		foreignField: "_id",
-		as: "question_doc"
-	}},
-	{$addFields:{
-		question_doc: {$arrayElemAt:["$question_doc",0]}
-	}},
-	{$addFields:{
-		// condition: {$ifNull:["$question_doc.properties.condition",null]},
-		// question_doc: null,
-		tags: {$arrayElemAt:[{ "$setDifference": [
-			{ "$map": {
-				"input": "$question_doc.properties.possibleAnswers",
-				"as": "a",
-				"in": { "$cond": [
-					{$eq:["$$a.key","$answer"]},
-					"$$a.tags",
-					false
-				]}
-			}},
-			[false]
-		]},0]},
-	}},
-	// END compile tags
-	
-	
-	// START seperate confidences
-	{$addFields:{
-		confidences: {$arrayToObject:{$map:{
-			input: {$objectToArray:"$tags"},
-			as: "a",
-			in: {k:"$$a.k",v:"$confidence"}
-		}}},
-	}},
-	// END seperate confidences
-	
-	
-	// START combine tags by forID
-	{$sort:{
-		confidence: 1,
-		_id: 1,
-	}},
-	{$group:{
-		_id: "$forID",
-		tags: {$mergeObjects:"$tags"},
-		confidences: {$mergeObjects:"$confidences"},
-	}},
-	// END combine tags by forID
-	
-	// START for the eye
-	{$sort:{
-		_id: 1
-	}},
-])
+	db.getCollection('Answers').aggregate([
+		// START get answers
+		/*{$match:{
+			"properties.forID": ObjectId("5e743d99d083985272c9bf99"),
+		}},*/
+		{$sort:{
+			"metadata.lastModified": -1
+		}},
+		{$group:{
+			_id: {$concat:[
+				{$toString:"$properties.forID"},
+				"_",
+				{$toString:"$properties.questionID"},
+			]},
+			docs: {$push:"$$ROOT"},
+		}},
+		{$project:{
+			docs: {$slice:["$docs",0,10]}
+		}},
+		{$unwind:"$docs"},
+		{$replaceRoot:{newRoot:"$docs"}},
+		// END get answers
+		
+		
+		// START group answers
+		{$group:{
+			_id: {$concat:[
+				{$toString:"$properties.forID"},
+				"_",
+				{$toString:"$properties.questionID"},
+				"_",
+				{$toString:"$properties.answer"}
+			]},
+			forID: { $first: "$properties.forID" },
+			questionID: { $first: "$properties.questionID" },
+			answer: { $first: "$properties.answer" },
+			count: { $sum: 1 },
+		}},
+		{$sort:{
+			count: -1,
+			_id: 1,
+		}},
+		{$group:{
+			_id: {$concat:[
+				{$toString:"$forID"},
+				"_",
+				{$toString:"$questionID"},
+			]},
+			forID: { $first: "$forID" },
+			questionID: { $first: "$questionID" },
+			answer: { $first: "$answer" },
+			this_answer_count: { $first: "$count" },
+			all_answers_count: { $sum: "$count" },
+		}},
+		{$addFields:{
+			confidence: {$divide:["$this_answer_count",{$max:[10,"$all_answers_count"]}]}
+		}},
+		// END group answers
+		
+		
+		// START compile tags
+		{$lookup:{
+			from: "Questions",
+			localField: "questionID",
+			foreignField: "_id",
+			as: "question_doc"
+		}},
+		{$addFields:{
+			question_doc: {$arrayElemAt:["$question_doc",0]}
+		}},
+		{$addFields:{
+			// condition: {$ifNull:["$question_doc.properties.condition",null]},
+			// question_doc: null,
+			tags: {$arrayElemAt:[{ "$setDifference": [
+				{ "$map": {
+					"input": "$question_doc.properties.possibleAnswers",
+					"as": "a",
+					"in": { "$cond": [
+						{$eq:["$$a.key","$answer"]},
+						"$$a.tags",
+						false
+					]}
+				}},
+				[false]
+			]},0]},
+		}},
+		// END compile tags
+		
+		
+		// START seperate confidences
+		{$addFields:{
+			confidences: {$arrayToObject:{$map:{
+				input: {$objectToArray:"$tags"},
+				as: "a",
+				in: {k:"$$a.k",v:"$confidence"}
+			}}},
+		}},
+		// END seperate confidences
+		
+		
+		// START combine tags by forID
+		{$sort:{
+			confidence: 1,
+			_id: 1,
+		}},
+		{$group:{
+			_id: "$forID",
+			tags: {$mergeObjects:"$tags"},
+			confidences: {$mergeObjects:"$confidences"},
+		}},
+		// END combine tags by forID
+		
+		// START for the eye
+		{$sort:{
+			_id: 1
+		}},
+	])
 
 
 
@@ -513,8 +510,8 @@ db.getCollection('Answers').aggregate([
 
 
 
-const __last_n_answers__ = 10
-db.getCollection('Answers').aggregate([
+	const __last_n_answers__ = 10
+	db.getCollection('Answers').aggregate([
     // START get answers
     /*{$match:{
         "properties.forID": ObjectId("5e743d99d083985272c9bfd3"),
