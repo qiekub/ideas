@@ -509,9 +509,8 @@ or: [{and}, {and}]
 
 
 
-
-	const __last_n_answers__ = 10
-	db.getCollection('Answers').aggregate([
+const __last_n_answers__ = 10
+db.getCollection('Answers').aggregate([
     // START get answers
     /*{$match:{
         "properties.forID": ObjectId("5e743d99d083985272c9bfd3"),
