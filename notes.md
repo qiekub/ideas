@@ -830,4 +830,67 @@ Donations link for every place
 
 
 
+——————————————————————————————————————————
+
+
+
+
+
+
+## How to match osm nodes with places information in the DB:
+
+1. osm-node-index
+2. wikidata
+3. wikipedia
+4. businuess-wiki-data
+
+
+
+
+
+
+
+
+
+
+——————————————————————————————————————————
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
