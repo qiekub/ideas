@@ -928,8 +928,23 @@ https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20
 
 
 
+# query changes of queer places
 
 
+[out:json][timeout:25][bbox:50.94185334042605,6.937584578990935,50.94250824312336,6.938645392656326]; // world
+(  
+  // node[~"."~"lgbt"];
+  node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"];
+  (node[~"^lgbtq.*$"~"."]; - node[~"^lgbtq.*$"~"(welcome|no)"];);
+  (node[~"^gay.*$"~"."]; - node[~"^gay.*$"~"(welcome|no)"];);
+  (node[~"^fetish.*$"~"."]; - node[~"^fetish.*$"~"(welcome|no)"];);
+);
+out meta;
+
+
+
+
+[bbox:50.73860756689409,7.123045921325684,50.74123855738153,7.127289175987244][out:json][timeout:25];(node[~"^community_centre.*$"~"(lgbt|homosexual|gay)"](newer:"2020-04-20T15:41:48Z");(node[~"^lgbtq.*$"~"."](newer:"2020-04-20T15:41:48Z");-node[~"^lgbtq.*$"~"(welcome|no)"];);(node[~"^gay.*$"~"."](newer:"2020-04-20T15:41:48Z");-node[~"^gay.*$"~"(welcome|no)"];);(node[~"^fetish.*$"~"."](newer:"2020-04-20T15:41:48Z");-node[~"^fetish.*$"~"(welcome|no)"];););out meta;out;(node(newer:"2020-04-20T15:41:48Z"););
 
 
 
