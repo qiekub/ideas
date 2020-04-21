@@ -837,12 +837,14 @@ Donations link for every place
 
 
 
-## How to match osm nodes with places information in the DB:
+# How to match places from different sources.
 
+## If possible, use the following list of unique ids:
 1. osm-node-index
 2. wikidata
 3. wikipedia
 4. businuess-wiki-data
+5. Lng+Lat match up to the fifths or sixs decimal place
 
 
 
