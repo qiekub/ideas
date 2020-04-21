@@ -857,11 +857,14 @@ The place with the highest score is the best match.
 ## urls that change rarely and are mostly unique (not neccessarly unique!)
 (score: 4)
 - wikipedia
+
 - website
 - facebook
 - twitter
+
 - phonenumber
 - email
+- contact:???
 
 ## properties that can change but identify a place (not neccessarly unique!)
 (score: 3)
