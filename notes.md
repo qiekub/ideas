@@ -952,6 +952,20 @@ https://overpass-api.de/api/status
 
 
 
+——————————————————————————————————————————
+
+
+
+
+# TODO 2020.04.23 00:29
+* Geschindigkeit von Overpass-Query vergleichen (mit welcome|no VS ohne)
+* OSM Orte zu Antworten umwandeln
+* OSM Antworten in die Datenbank speichern
+* Quellen-Angaben besser abspeichern (Datensatz Info bei jeder Antwort.)
+* Bei generieren der Orte die Quellen-Angaben-IDs und die Antwort-IDs dazuspeichern.
+
+
+
 
 
 
