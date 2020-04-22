@@ -958,7 +958,7 @@ https://overpass-api.de/api/status
 
 
 # TODO 2020.04.23 00:29
-* Geschindigkeit von Overpass-Query vergleichen (mit welcome|no VS ohne)
+* Geschindigkeit von Overpass-Query vergleichen (mit welcome|no VS ohne) -> ohne ist zirka ein drittel schneller.
 * OSM Orte zu Antworten umwandeln
 * OSM Antworten in die Datenbank speichern
 * Quellen-Angaben besser abspeichern (Datensatz Info bei jeder Antwort.)
