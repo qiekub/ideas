@@ -1078,9 +1078,24 @@ https://overpass-api.de/api/status
 
 
 
+——————————————————————————————————————————
 
 
 
+"osmID" : "node/268917395",
+"tags": {
+	"provided_for:homosexual" : "yes",
+	"fax" : "+49 233 690 98",
+	"health_facility:type" : "counselling_centre",
+}
+
+"osmID" : "node/289829475",
+"tags" : {
+	"fhrs:authority" : "Lambeth",
+	"fhrs:id" : "483951",
+	"fhrs:inspectiondate" : "2009-05-22",
+	"fhrs:rating" : "5",
+}
 
 
 
