@@ -923,6 +923,111 @@ https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20
 
 
 
+
+
+
+
+
+
+
+db.getCollection('OsmCache').aggregate([
+    {$match:{
+        $or: [
+            {'properties.osmID':"node/76609838"},
+            {'properties.tags.wikidata':"Q7736161"},
+            {"properties.tags.ref:isil": "NL-0800070000"},
+            {"properties.tags.fhrs:id": "319575"},
+            {'properties.tags.website':"http://www.viaductleeds.com/"},
+            {'properties.tags.phone':"+31 20 523 0900"},
+            {'properties.tags.contact:facebook':"https://www.facebook.com/viaductshowbar/"},
+            {'properties.tags.contact:twitter':"https://twitter.com/ViaductShowBar"},
+            {'properties.tags.contact:youtube':"https://www.youtube.com/user/IHLIA"},
+            {'properties.tags.name':"Schwulenberatung Berlin"},
+            {
+                "properties.tags.addr:housenumber" : "7",
+                "properties.tags.addr:postcode" : "WC2N 4JF",
+                "properties.tags.addr:street" : "Duncannon Street",
+            },
+            {
+                "properties.geometry.location.lng": {
+                    $gt: -2.967460,
+                    $lt: -2.967458
+                },
+                "properties.geometry.location.lat": {
+                    $gt: 56.462151,
+                    $lt: 56.462153
+                },
+            },
+        ]
+    }}
+])
+
+
+
+
+
+
+db.getCollection('OsmCache').aggregate([
+    {$addFields:{score:0}},
+    {$addFields:{
+        score: {
+            $add: [
+                "$score",
+                {$cond:{
+                    if: {
+                        $and: [
+                            {$eq:["$properties.osmID","node/937535734"]},
+                        ]
+                    },
+                    then: Infinity,
+                    else: 0
+                }}
+            ]
+        }
+    }},
+    {$addFields:{
+        score: {
+            $add: [
+                "$score",
+                {$cond:{
+                    if: {
+                        $and: [
+                            {$gt: ["$properties.geometry.location.lng", 6.9380895]},
+                            {$lt: ["$properties.geometry.location.lng", 6.9380915000000005]},
+                            {$gt: ["$properties.geometry.location.lat", 50.9419595]},
+                            {$lt: ["$properties.geometry.location.lat", 50.9419615]},
+                        ]
+                    },
+                    then: 1,
+                    else: 0
+                }}
+            ]
+        }
+    }},
+    {$match:{
+        score: {$gt:0}
+    }},
+    {$sort:{
+        score: -1
+    }}
+])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ——————————————————————————————————————————
 
 
