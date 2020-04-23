@@ -894,7 +894,7 @@ The place with the highest score is the best match.
 
 ## properties that identify a group of places (not unique but can narrow it down in combination!)
 (score: 1)
-- ???:wikidata (operator:wikidata, network:wikidata, brand:wikidata, architect:wikidata, artist:wikidata, species:wikidata, subject:wikidata, name:etymology:wikidata, ...)
+- ???:wikidata (operator:wikidata, network:wikidata, brand:wikidata, architect:wikidata, artist:wikidata, species:wikidata, subject:wikidata, name:etymology:wikidata, flag:wikidata, ...)
 - operator
 - network
 - brand
@@ -903,7 +903,6 @@ The place with the highest score is the best match.
 - species
 - subject
 - name:etymology
-- flag:wikidata
 - flag
 - cycle_network
 
