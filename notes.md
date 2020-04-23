@@ -892,7 +892,7 @@ The place with the highest score is the best match.
 - rcn_ref // regional cycle route
 - lcn_ref // local cycle route
 
-## properties that identify a group of places (not unique but can be in combination!)
+## properties that identify a group of places (not unique but can narrow it down in combination!)
 (score: 1)
 - ???:wikidata (operator:wikidata, network:wikidata, brand:wikidata, architect:wikidata, artist:wikidata, species:wikidata, subject:wikidata, name:etymology:wikidata, ...)
 - operator
