@@ -848,6 +848,7 @@ The place with the highest score is the best match.
 - iata
 - icao
 - ref:??? (not "ref", but: ref:whc, ref:isil, ref:dhis2, ref:vatin, ref:wmo, ref:wigos, ref:bag, ref:bufa, ...)
+- fhrs:id (UK Food Hygiene Rating Scheme)
 
 ## geo information that change seldom
 (score: 5)
