@@ -62,5 +62,18 @@ Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1uYl
 https://www.queerejugend-nds.de/netzwerk/
 Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1cFqlhsNLpoK-ia1zR1Q3ASMxDgLOhpFx&ll=52.33275722782431%2C9.452727791969892&z=8
 
+## Queer places in Rheinlandpfalz, Germany
+https://www.queernet-rlp.de/regionen
+https://www.queernet-rlp.de/regionen/mainz
+https://www.queernet-rlp.de/regionen/pfalz
+https://www.queernet-rlp.de/regionen/koblenz
+https://www.queernet-rlp.de/regionen/trier
+https://www.queernet-rlp.de/regionen/uberregional -> https://www.queernet-rlp.de/wp-content/uploads/flyer_landesweit1.pdf
+
+## LSBTTIQ youthgroups in Baden-Württemberg, Germany
+https://www.netzwerk-lsbttiq.net/index.php/jugend/jugendgruppen
+
+## Queer groups in Heidelberg, Germany
+http://www.queeres-netzwerk-hd.de/lesbisch-schwul-transsexuell-heidelberg/gruppen-im-queeren-netzwerk/
 
 
