@@ -58,3 +58,9 @@ https://www.nyclgbtsites.org/
 https://www.lgbtcampus.org/lgbt-map
 Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1uYlF3milN1euuDcLS_iXLncpsHQ&ll=39.22637344002685%2C-61.28580020000004&z=2
 
+## Queere Jugendgruppen in Niedersachsen
+https://www.queerejugend-nds.de/netzwerk/
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1cFqlhsNLpoK-ia1zR1Q3ASMxDgLOhpFx&ll=52.33275722782431%2C9.452727791969892&z=8
+
+
+
