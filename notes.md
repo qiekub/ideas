@@ -1110,6 +1110,34 @@ https://overpass-api.de/api/status
 
 
 
+——————————————————————————————————————————
+
+
+## Impressums Generatoren
+
+https://www.juraforum.de/impressum-generator/
+
+
+
+## Datenschutz Generatoren
+
+https://datenschutz-generator.de/
+
+
+
+——————————————————————————————————————————
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
