@@ -1,6 +1,6 @@
 # Sponsoring
 
-Ideas on where to get sponsoring.
+Ideas on where to get sponsoring / raise money.
 
 https://q-nn.de/foerderung/
 
@@ -8,6 +8,5 @@ https://q-nn.de/foerderung/
 
 # Fundraising
 
-Ideas on how to raise money.
 
 https://www.fundraisingbox.com/
