@@ -352,11 +352,6 @@ or: [{and}, {and}]
 
 
 
-(
-	God gave me depression, cause he knew, if I only had mania, I would try to overthrough him.
-)
-
-
 
 
 ## How to compile a place from answers
