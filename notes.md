@@ -291,15 +291,6 @@ or: [{and}, {and}]
 
 
 
-——————————————————————————————————————————
-
-
-## How to compile a place from answers
-- get the 4 latest answers for a specfic place and a question
-- get the answer with the highest amount of votes or the latest answer-date
-- get the tags of that answer
-- overwrite the old place data with these tags
-
 
 ——————————————————————————————————————————
 
@@ -349,8 +340,6 @@ or: [{and}, {and}]
 
 
 ——————————————————————————————————————————
-
-
 
 
 
