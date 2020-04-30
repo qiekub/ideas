@@ -822,11 +822,11 @@ Donations link for every place
 If possible, use the following list to find a matching place.
 The place with the highest score is the best match.
 
-## unique ids that can change very frequently but stay the same if nothing changed (unique!)
+### unique ids that can change very frequently but stay the same if nothing changed (unique!)
 (score: ∞)
 - osm-id
 
-## unique references that won't changed (unique!)
+### unique references that won't changed (unique!)
 (score: 6)
 - wikidata
 - iata
@@ -834,12 +834,12 @@ The place with the highest score is the best match.
 - ref:??? (not "ref", but: ref:whc, ref:isil, ref:dhis2, ref:vatin, ref:wmo, ref:wigos, ref:bag, ref:bufa, ...)
 - fhrs:id (UK Food Hygiene Rating Scheme)
 
-## geo information that change seldom
+### geo information that change seldom
 (score: 5)
 - Lng+Lat match up to the sixs decimal place
 - full addr:??? match
 
-## urls that change rarely and are mostly unique (not neccessarly unique!)
+### urls that change rarely and are mostly unique (not neccessarly unique!)
 (score: 4)
 - wikipedia
 
@@ -851,7 +851,7 @@ The place with the highest score is the best match.
 - email
 - contact:???
 
-## properties that can change but identify a place (not neccessarly unique!)
+### properties that can change but identify a place (not neccessarly unique!)
 (score: 3)
 - official_name
 - long_name
@@ -859,7 +859,7 @@ The place with the highest score is the best match.
 - short_name
 - alt_name
 
-## vague properties that can eventually identify (not neccessarly unique!)
+### vague properties that can eventually identify (not neccessarly unique!)
 (score: 2)
 - wikimedia_commons
 - mapillary
@@ -876,7 +876,7 @@ The place with the highest score is the best match.
 - rcn_ref // regional cycle route
 - lcn_ref // local cycle route
 
-## properties that identify a group of places (not unique but can narrow it down in combination!)
+### properties that identify a group of places (not unique but can narrow it down in combination!)
 (score: 1)
 - ???:wikidata (operator:wikidata, network:wikidata, brand:wikidata, architect:wikidata, artist:wikidata, species:wikidata, subject:wikidata, name:etymology:wikidata, flag:wikidata, ...)
 - operator
@@ -890,7 +890,7 @@ The place with the highest score is the best match.
 - flag
 - cycle_network
 
-## any other properties
+### any other properties
 - ???
 
 
