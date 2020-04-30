@@ -1141,6 +1141,9 @@ https://datenschutz-generator.de/
 
 
 
+# Search Autocomplete
+
+https://api.mapbox.com/geocoding/v5/mapbox.places/Bonn.json?autocomplete=true&limit=5&language=de&access_token=
 
 
 
