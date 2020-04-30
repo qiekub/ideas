@@ -1161,21 +1161,66 @@ https://api.mapbox.com/geocoding/v5/mapbox.places/Bonn.json?autocomplete=true&li
 
 
 
+# Email
+
+
+Hi Nicki,
+
+I finally found time to answer! 😅
+
+
+## Datasets:
+I already knew about adding GeoJSON in leaflet and mapbox-gl. Or to directly add data in the studio.
+I'm thinking more about merging datasets into my database so the infos displayed use multiple soures. (Of course with attribution and just if it's legally possible.)
+
+I think I found a way that works okay and can be expanded for other datasets.
+I'll add new place infos from other datasets as changesets. But before adding try to find out if the place is already in the db by comparing the information. (You can find my basic probably not helpful notes here: https://github.com/qiekub/ideas/blob/master/notes.md#how-to-match-places-from-different-sources)
+
+
+## Map localization:
+I've read through your information. It's probably the best to switch from leaflet to mapbox-gl.
+As I currently want to add more urgent features first (spam-prevention, search, getting more help, ...), I opened an issue on GitHub to track ideas for the map-translation. (https://github.com/qiekub/map/issues/7)
+
+
+## Spam prevention:
+I thought about recaptcha but aren't sure about sending data to Google. The GDPR implications are pretty huge. And more important, I want to prevent forced outings through social media addvertisements.
+
+I didn't know about retext. 😃 As of my understanding, it's mainly created for English. But I like that it doens't rely on a third-party-service like https://perspectiveapi.com/
+
+As a start, I save a cookie to just use the latest submission from each user. And overall just the most entered information. So changing an information takes more time and user/devices. (Yes, I know how weak of a protection this is. 🙈)
+
+I've created an issue to track ideas on spam prevention. (https://github.com/qiekub/map/issues/8)
+
+
+## Further development:
+Of course I'm gonna develop as much as I can. **My mind has way to many ideas!!! 🥳**
+But to keep the project going, I need more people and probably funding sometime in future. Both aren't huge problems but any suggestions are welcome. (I guess I should mention that I'm not asking Mapbox for funding.)
+
+
+Best,
+Thomas
 
 
 
 
+# WhatsApp
+
+
+Hi Nicki, it Thomas 👋
+
+Hope your doing well!
+
+
+I had to deal with a few personal issues last week but I finally wrote you answer per email.
+
+Adding places should now work as expected on desktop browsers. I'm adding features as I can amke time for it.
+
+I'm currently talking with people in the german LGBTQ-community to resolve the most urgent problems before promoting the map and to get more developers.
+The current feedback is overwhelming!!! 🥳
 
 
 
 
-
-
-
-
-
-
-
-
+——————————————————————————————————————————
 
 
