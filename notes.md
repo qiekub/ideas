@@ -1224,3 +1224,372 @@ The current feedback is overwhelming!!! 🥳
 ——————————————————————————————————————————
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Who is welcome at a place?
+
+
+
+
+
+
+
+https://wiki.openstreetmap.org/wiki/Key:lgbtq
+https://wiki.openstreetmap.org/wiki/Key:gay
+https://wiki.openstreetmap.org/wiki/Key:community_centre:for
+https://wiki.openstreetmap.org/wiki/Proposed_features/Visitors_orientation
+https://wiki.openstreetmap.org/wiki/MapBeks
+
+
+## Keys
+
+The key `lgbtq:primary` already exist and is in wide use. The new sub-keys are there to clarify this key.
+
+lgbtq:primary = yes / no
+
+lgbtq:primary:for = ...
+lgbtq:only:for = ...
+lgbtq:welcomes = ...
+lgbtq:rejects = ...
+
+
+## Values
+
+- queer / all_queer / yes
+- bpoc (black and people of color)
+
+- women
+- men
+
+- gay
+- lesbian
+- bi
+- pan
+- trans
+- cis
+- inter
+- non_binary
+- genderfluid
+- ace
+- ...
+
+- twinks
+- bears
+
+- homosexual (would include gay and lesbian)
+
+
+
+
+
+primary
+majority
+only
+welcome
+friendly
+no
+yes
+gay_and_friends
+
+
+
+
+
+
+
+# mongodb query to get all queer related tags:
+
+	db.getCollection('CompiledPlaces').aggregate([
+	    {$project:{tags:{$objectToArray:"$properties.tags"}}},
+	    {$unwind:"$tags"},
+	    {$match:{
+	        "tags.k": {$not:{$in:[
+	            "website",
+	            "contact:website",
+	            "facebook",
+	            "description",
+	            "contact:email",
+	            "brand",
+	            "min_age",
+	            "osm_id",
+	            "operator",
+	            "wikipedia",
+	            "twitter",
+	            "preset",
+	            "opening_hours:url",
+	            "official_name",
+	            "name",
+	            "note",
+	            "contact:facebook",
+	            "email",
+	            "instagram",
+	            "contact:instagram",
+	            "contact:linkedin",
+	            "contact:twitter",
+	        ]}},
+	    }},
+	    {$sort:{"tag.k":-1}},
+	    
+	    {$project:{
+	        key: "$tags.k",
+	        value: "$tags.v",
+	        tag: {$concat: ["$tags.k", " = ", { $convert: { input: "$tags.v", to: "string" } } ]}
+	    }},
+	    
+	    {$addFields: { is_queer: { $regexMatch: { input: "$tag", regex: /lgbt|gay|fetish/ }  } } },
+	    {$match:{is_queer:true}},
+	    {$group:{
+	        _id:"$tag",
+	        key:{$first:"$key"},
+	        value:{$first:"$value"},
+	        count:{$sum:1},
+	    }},
+	    {$addFields: {
+	        _id: {$concat: ["(", { $convert: { input: "$count", to: "string" } }, ")     ", "$_id"]}
+	    }},
+	    {$sort:{count:-1,key:1,value:1}},
+	    {$group:{
+	        _id:null,
+	        tags:{$push:"$_id"},
+	    }},
+	])
+
+
+## Result
+
+	{
+	    "_id" : null,
+	    "tags" : [ 
+	        "(563)     lgbtq = primary", 
+	        "(460)     gay = yes", 
+	        "(94)     gay = welcome", 
+	        "(54)     gay:men = only", 
+	        "(52)     gay:men = yes", 
+	        "(43)     lgbtq = welcome", 
+	        "(30)     community_centre:for = lgbtq", 
+	        "(23)     gay:women = yes", 
+	        "(23)     lgbtq = yes", 
+	        "(17)     lgbtq:men = primary", 
+	        "(13)     lgbtq:men = only", 
+	        "(11)     gay:transgender = yes", 
+	        "(9)     lgbtq:cruising = yes", 
+	        "(8)     lgbtq:women = primary", 
+	        "(7)     audience = gay", 
+	        "(7)     gay = only", 
+	        "(6)     lgbtq:male = primary", 
+	        "(5)     gay = men", 
+	        "(4)     gay:women = only", 
+	        "(4)     lgbtq = only", 
+	        "(4)     lgbtq:bears = primary", 
+	        "(4)     lgbtq:bears = yes", 
+	        "(3)     gay = majority", 
+	        "(3)     gay:women = welcome", 
+	        "(2)     lgbtq = friendly", 
+	        "(2)     lgbtq:female = primary", 
+	        "(2)     type = gay", 
+	        "(1)     audience = gay_and_friends", 
+	        "(1)     club = gay", 
+	        "(1)     club = lgbtq", 
+	        "(1)     community_centre = youth_centre;lgbtq", 
+	        "(1)     community_centre:for = juvenile;lgbtq", 
+	        "(1)     gay = Yes", 
+	        "(1)     gay:only = no", 
+	        "(1)     gayfriendly = yes", 
+	        "(1)     lgbtq:men = yes", 
+	        "(1)     lgbtq:women = yes", 
+	        "(1)     sauna = gay", 
+	        "(1)     social_facility:for = lgbt"
+	    ]
+}
+
+
+
+
+-----------------
+
+
+
+
+lgbtq:primary:for = ...
+lgbtq:only:for = ...
+lgbtq:welcomes = ...
+lgbtq:rejects = ...
+
+
+audience:only:for = men
+audience:primary:for = lgbtq
+audience:welcomes = gay men lgbtq women
+audience:rejects = ...
+
+
+
+
+
+
+
+**Can only and pimary be combined to only have three questions?**
+audience:primary:for = lgbtq
+audience:welcomes = gay women bpoc
+audience:rejects = men
+
+
+
+
+
+
+
+* = only						->	audience:only:for = *
+* = primary|majority			->	audience:primary:for = *
+* = yes|welcome					->	audience:welcomes = *
+
+audience = gay					->	audience:primary:for = gay
+gayfriendly = yes				->	audience:welcomes = gay
+gay:transgender = yes			->	audience:welcomes = transgender
+
+social_facility:for = lgbt		->	audience:primary:for = lgbtq
+community_centre = lgbtq		->	audience:primary:for = lgbtq
+community_centre:for = lgbtq	->	audience:primary:for = lgbtq
+
+audience = gay_and_friends		->	audience:primary:for = gay
+sauna = gay						->	audience:primary:for = gay
+
+⚠️ lgbtq:cruising = yes			->	amenity = cruising
+
+lgbtq:men = primary			 	->	audience:primary:for = men
+lgbtq:male = primary			->	audience:primary:for = men
+
+        "(563)     lgbtq = primary", 
+        "(460)     gay = yes", 
+        "(94)     gay = welcome", 
+        "(54)     gay:men = only", 
+        "(52)     gay:men = yes", 
+        "(43)     lgbtq = welcome", 
+        "(30)     community_centre:for = lgbtq", 
+        "(23)     gay:women = yes", 
+        "(23)     lgbtq = yes", 
+        "(17)     lgbtq:men = primary", 
+        "(13)     lgbtq:men = only", 
+        "(11)     gay:transgender = yes", 
+        "(9)     lgbtq:cruising = yes", 
+        "(8)     lgbtq:women = primary", 
+        "(7)     audience = gay", 
+        "(7)     gay = only", 
+        "(6)     lgbtq:male = primary", 
+        "(5)     gay = men", 
+        "(4)     gay:women = only", 
+        "(4)     lgbtq = only", 
+        "(4)     lgbtq:bears = primary", 
+        "(4)     lgbtq:bears = yes", 
+        "(3)     gay = majority", 
+        "(3)     gay:women = welcome", 
+        "(2)     lgbtq = friendly", 
+        "(2)     lgbtq:female = primary", 
+        "(2)     type = gay", 
+        "(1)     audience = gay_and_friends", 
+        "(1)     club = gay", 
+        "(1)     club = lgbtq", 
+        "(1)     community_centre = youth_centre;lgbtq", 
+        "(1)     community_centre:for = juvenile;lgbtq", 
+        "(1)     gay = Yes", 
+        "(1)     gay:only = no", 
+        "(1)     gayfriendly = yes", 
+        "(1)     lgbtq:men = yes", 
+        "(1)     lgbtq:women = yes", 
+        "(1)     sauna = gay", 
+        "(1)     social_facility:for = lgbt"
+
+
+
+
+
+
+
+
+**lgbtq, gay, ... could be wikidata-ids**
+
+wikidata:audience:only:for = ...
+wikidata:audience:primary:for = ...
+wikidata:audience:welcomes = ...
+wikidata:audience:rejects = ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
