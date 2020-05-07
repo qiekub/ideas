@@ -1552,11 +1552,17 @@ wikidata:audience:rejects = ...
 
 
 
+-----------------
 
 
+## OR: Every audience has its own tag.
 
+lgbtq:men == audience:men
 
+lgbtq:men = only / primary / welcome / no
+audience:men = only / primary / welcome / no
 
+wikidata:audience:Q12345 = only / primary / welcome / no
 
 
 
