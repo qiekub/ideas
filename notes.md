@@ -1585,6 +1585,41 @@ wikidata:audience:Q12345 = only / primary / welcome / no
 -----------------
 
 
+https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native
+
+```xml
+<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+```
+
+```xml
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+<link href="/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+<link href="/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+<link href="/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+<link href="/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+<link href="/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+<link href="/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+```
+
+```js
+// Detects if device is on iOS 
+const isIos = () => {
+	const userAgent = window.navigator.userAgent.toLowerCase();
+	return /iphone|ipad|ipod/.test( userAgent );
+}
+// Detects if device is in standalone mode
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+// Checks if should display install popup notification:
+if (isIos() && !isInStandaloneMode()) {
+	this.setState({ showInstallMessage: true });
+}
+```
+
 
 
 
