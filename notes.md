@@ -353,6 +353,7 @@ or: [{and}, {and}]
 
 
 
+```js
 	db.getCollection('Answers').aggregate([
 		// START get answers
 		/*{$match:{
@@ -470,6 +471,7 @@ or: [{and}, {and}]
 			_id: 1
 		}},
 	])
+```
 
 
 
@@ -493,6 +495,7 @@ or: [{and}, {and}]
 
 
 
+```js
 const __last_n_answers__ = 10
 db.getCollection('Answers').aggregate([
     // START get answers
@@ -677,7 +680,7 @@ db.getCollection('Answers').aggregate([
         _id: 1
     }},
 ])
-
+```
 
 
 
@@ -914,6 +917,7 @@ https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20
 
 
 
+```js
 	db.getCollection('OsmCache').aggregate([
 	    {$match:{
 	        $or: [
@@ -945,12 +949,14 @@ https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20
 	        ]
 	    }}
 	])
+```
 
 
 
 
 
 
+```js
 	db.getCollection('OsmCache').aggregate([
 	    {$addFields:{score:0}},
 	    {$addFields:{
@@ -995,7 +1001,7 @@ https://w.wiki/GbF redirects to: https://query.wikidata.org/embed.html#SELECT%20
 	        score: -1
 	    }}
 	])
-
+```
 
 
 
@@ -1067,6 +1073,7 @@ https://overpass-api.de/api/status
 ——————————————————————————————————————————
 
 
+```json
 
 "osmID" : "node/268917395",
 "tags": {
@@ -1083,6 +1090,7 @@ https://overpass-api.de/api/status
 	"fhrs:rating" : "5",
 }
 
+```
 
 
 
@@ -1334,6 +1342,7 @@ gay_and_friends
 
 # mongodb query to get all queer related tags:
 
+```js
 	db.getCollection('CompiledPlaces').aggregate([
 	    {$project:{tags:{$objectToArray:"$properties.tags"}}},
 	    {$unwind:"$tags"},
@@ -1388,10 +1397,11 @@ gay_and_friends
 	        tags:{$push:"$_id"},
 	    }},
 	])
-
+```
 
 ## Result
 
+```json
 	{
 	    "_id" : null,
 	    "tags" : [ 
@@ -1436,7 +1446,7 @@ gay_and_friends
 	        "(1)     social_facility:for = lgbt"
 	    ]
 }
-
+```
 
 
 
@@ -1572,6 +1582,7 @@ wikidata:audience:Q12345 = only / primary / welcome / no
 
 
 
+-----------------
 
 
 
