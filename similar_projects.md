@@ -76,4 +76,6 @@ https://www.netzwerk-lsbttiq.net/index.php/jugend/jugendgruppen
 ## Queer groups in Heidelberg, Germany
 http://www.queeres-netzwerk-hd.de/lesbisch-schwul-transsexuell-heidelberg/gruppen-im-queeren-netzwerk/
 
+## Five places in Sitzerland
+https://www.mycheckpoint.ch/de/standorte
 
