@@ -1380,7 +1380,7 @@ gay_and_friends
 	        tag: {$concat: ["$tags.k", " = ", { $convert: { input: "$tags.v", to: "string" } } ]}
 	    }},
 	    
-	    {$addFields: { is_queer: { $regexMatch: { input: "$tag", regex: /lgbt|gay|fetish/ }  } } },
+	    {$addFields: { is_queer: { $regexMatch: { input: "$tag", regex: /lgbt|trans|lesbian|gay|fetish/ }  } } },
 	    {$match:{is_queer:true}},
 	    {$group:{
 	        _id:"$tag",
@@ -1440,10 +1440,12 @@ gay_and_friends
 	        "(1)     gay = Yes", 
 	        "(1)     gay:only = no", 
 	        "(1)     gayfriendly = yes", 
+	        "(1)     lesbian = yes", 
 	        "(1)     lgbtq:men = yes", 
 	        "(1)     lgbtq:women = yes", 
 	        "(1)     sauna = gay", 
-	        "(1)     social_facility:for = lgbt"
+	        "(1)     social_facility:for = lgbt", 
+            "(1)     community_centre:for = homosexual;bisexual;transgender"
 	    ]
 }
 ```
