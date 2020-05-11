@@ -1635,7 +1635,25 @@ gay:only = no											-> ?
 
 
 
+
+
+
+
+
+
+
+
+
 -----------------
+
+
+
+
+
+
+
+
+
 
 
 https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native
@@ -1676,13 +1694,76 @@ if (isIos() && !isInStandaloneMode()) {
 
 
 
+
+
+
+
+
+
+
+
+
 -----------------
 
 
 
 
 
+
+
+
+
+
+
+
+
+
 absurd illustrations that make sense
+
+
+
+
+
+
+
+
+
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
