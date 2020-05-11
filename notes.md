@@ -1579,6 +1579,57 @@ wikidata:audience:Q12345 = only / primary / welcome / no
 
 
 
+## Values
+
+only			->	only
+primary			->	primary
+lgbtq			->	primary
+gay				->	primary
+majority		->	primary
+gay_and_friends	->	primary
+welcome			->	welcome
+yes				->	welcome
+friendly		->	welcome
+
+
+
+## Keys
+
+lgbtq				-> queer
+gay					-> queer
+gay:women			-> women
+lgbtq:female		-> women
+gay:men				-> men
+lgbtq:men			-> men
+lgbtq:male			-> men
+gay:transgender		-> trans
+homosexual			-> sexuality:gay
+bisexual			-> sexuality:bi
+juvenile			-> youth
+youth_centre		-> youth
+
+lgbtq:bears			-> bears
+lgbtq:cruising		-> queer:cruising
+
+
+
+## Special Tags
+
+community_centre:for = homosexual;bisexual;transgender	-> audience:sexuality:gay = primary | audience:sexuality:bi = primary | audience:trans = primary
+community_centre:for = lgbtq							-> audience:queer = primary
+community_centre:for = juvenile;lgbtq					-> audience:queer = primary | audience:youth = primary
+community_centre = youth_centre;lgbtq					-> audience:queer = primary | audience:youth = primary
+social_facility:for = lgbt								-> audience:queer = primary
+type = gay												-> audience:queer = primary
+sauna = gay												-> audience:queer = primary
+club = gay												-> audience:queer = primary
+club = lgbtq											-> audience:queer = primary
+audience = gay											-> audience:queer = primary
+audience = gay_and_friends								-> audience:queer = primary | audience:? = primary
+gayfriendly = yes										-> audience:queer = welcome
+gay = men												-> audience:men = primary
+gay:only = no											-> ?
+
 
 
 
