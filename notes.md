@@ -1745,6 +1745,19 @@ absurd illustrations that make sense
 
 
 
+-----------------
+
+
+
+
+
+# TODO:
+- Check the wording of: http://192.168.2.102:3000/view/5ea54683dd301aacac336f9f/
+
+
+
+
+
 
 
 
