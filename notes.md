@@ -1732,13 +1732,25 @@ absurd illustrations that make sense
 
 
 
+## Filter menu
+
+- Primary queer places
+- Queers are welcome
+- All other places
 
 
+## Place Info
+
+- This place is as queer as it gets! Be who you are! This place is made for you!
+- This place is a safe space! Queer people are welcome here!
+- Please be cautios! We don't yet know if this place is a safe space.
 
 
+## More Details
 
-
-
+Only men and women are allowed.
+Primary for men and women.
+Men and women are welcome.
 
 
 
