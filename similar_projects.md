@@ -3,6 +3,7 @@
 ## "Queering the Map"
 https://www.queeringthemap.com/
 Is for personal experiences only.
+(Können die einen Link zu map.qiekub.org darstellen.)
 
 ## "OpenQueerMap"
 https://wiki.openstreetmap.org/wiki/OpenQueerMap

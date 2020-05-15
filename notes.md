@@ -1776,6 +1776,67 @@ absurd illustrations that make sense
 
 
 
+# Ideen mit/von Niclas
+- An den Orten verstande Sprachen  .
+- Ist der Ort? / Ist die Gegend gefährlich?
+- Öffnungszeiten  
+- essen? trinken? 
+- Gaderorbe 
+- Kosten  
+- Werden die Toiletten unterschieden zwischen geleschtern? 
+- Wechsel zwischen Satelliten- und Straßenansicht.
+- Kondom-Automat in Jugenzentren und eventuell auf der Karte
+	* Dabei Information zur Benutzung anzeigen (plus weitere Seuelle Aufklärung)
+- Orte Teilen können
+- Auf der Karte anzeigen wo man gerade ist!
+- Den Spenden Button presenter machen.
+- Genau über Privatsphäre informieren
+	* Presenter machen dass die App möglichst keine Daten speichert.
+	* Wo stehen die Server?
+	* Website-Intro should have more information
+	* "You are save!" / "Du bist hier sicher!"
+- Sollte im Quermodes mehr darstellen
+- Donation link ins Website Intro und Thanks
+- Was bedeuten die Farben in den Kreisen. Legende oder Anleitung
+- Einstellungen
+	* Dunkel / Hell wechseln
+	* Sprache ändern
+- Mehr Reaktion des Suchefelds
+- Informelles
+	- Geschichtliches
+		* Wie hat sich das Queer verändert.
+	- Nachrichten
+		* Was passiert generell?
+		* Good News für Queer
+	- Rechtliche Situation in den Ländern auf der Karte darstellen
+- Bewertungen (Up und Downvoting)
+- Orte speichern können (Orte wiederfinden können)
+- Offline (Karte runterladen)
+- Feedback / Kontakt Bogen
+	* In der App. Nicht als Email.
+	* Endlos Textfled
+	* Optionale Email Adress Angabe, falls man eine Antwort möchte.
+- Karte drehen können (Kompass nicht vergessen)
+- Organisationen die sich einsetzen, aber keinen Ort haben. (ZB. FTP)
+- Zu einer allround Wissen Platform für Queeres Zeug machen!
+	* Sexuelle Aufklärung leisten
+	* Glossar zu queeren 
+- ANTI SPAM
+	* Die Information auf der Seite müssen vertrauenswürdig sein. (Sie müssen stimmen)
+	* Jeder Beitrag muss erst bestätigt werden bevor er auf der Karte dargestellt wird.
+- Dresscodes
+	- Vielleicht bei Eteblismons wichtig.
+	- Aklären was welcher Dress-Code bedeutet.
+- Links zu anderen Projecten
+	* "Queering the Map" https://www.queeringthemap.com/
+	* "Queere Medien Datenbank" https://www.queermdb.de/
+- Fun Facts
+	* Gibt es queere Spiele? Ja: Cards Against Humanity
+- Blog
+	* Artikel zu insgessamt queeren Themen. Auch ready für Zeitungen.
+	* Plus jegliche Changelogs
+- Comming Soon — Welche Funktionen sind geplant
+	* Aufruf zum Mitmachen
 
 
 
