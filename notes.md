@@ -1853,3 +1853,31 @@ absurd illustrations that make sense
 
 
 
+
+
+
+
+
+
+
+
+
+-----------------
+
+
+
+
+# Should the address format be saved with the place?
+addr:format = DE / US / GB / FR / ...
+
+
+
+
+
+
+
+
+
+
+
+
