@@ -1854,7 +1854,7 @@ Men and women are welcome.
 	* Glossar zu queeren 
 - ANTI SPAM
 	* Die Information auf der Seite müssen vertrauenswürdig sein. (Sie müssen stimmen)
-	* Jeder Beitrag muss erst bestätigt werden bevor er auf der Karte dargestellt wird.
+	* !!! Jeder Beitrag muss erst bestätigt werden bevor er auf der Karte dargestellt wird.
 - Dresscodes
 	- Vielleicht bei Eteblismons wichtig.
 	- Aklären was welcher Dress-Code bedeutet.
