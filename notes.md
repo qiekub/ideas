@@ -1807,10 +1807,11 @@ Men and women are welcome.
 
 
 # Ideen mit/von Niclas
-- An den Orten verstande Sprachen  .
+- An den Orten verstande Sprachen.
+	* (Just send the changes.)
 - Ist der Ort? / Ist die Gegend gefährlich?
-- Öffnungszeiten  
-- essen? trinken? 
+- Öffnungszeiten
+- essen? trinken?
 - Gaderorbe 
 - Kosten  
 - Werden die Toiletten unterschieden zwischen geleschtern? 
