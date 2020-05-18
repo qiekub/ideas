@@ -80,3 +80,11 @@ http://www.queeres-netzwerk-hd.de/lesbisch-schwul-transsexuell-heidelberg/gruppe
 ## Five places in Sitzerland
 https://www.mycheckpoint.ch/de/standorte
 
+## Queer places in Stockholm, Sweden
+https://www.visitstockholm.com/the-lgbt-guide-to-stockholm/
+
+## Queer places in Gothenburg, Sweden
+https://www.goteborg.com/en/lgbt-gothenburg/
+
+
+
