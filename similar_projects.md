@@ -90,5 +90,8 @@ https://www.goteborg.com/en/lgbt-gothenburg/
 A map of LGBT-free-zones in Poland.
 https://atlasnienawisci.pl/
 
+## LGBT Safe Spaces in the Philippines
+Collected by MapBeks
+http://umap.openstreetmap.fr/en/map/lgbt-safe-spaces-in-the-philippines_447363
 
 
