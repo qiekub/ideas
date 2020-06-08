@@ -11,10 +11,20 @@
 
 ## Database
 
-``` JSON
-
+``` JS
 {
-
+	_id: '',
+	__typename: 'Doc',
+	properties: {
+		__typename: 'Edge',
+		edgeType: '',	// rejects / approves / skipped / fact_checked / visited / opened / ...
+		fromID: '',		// actionTakenBy
+		toID: '',		// actionTakenOn
+		tags: {
+			comment: '',
+			...
+		},
+	},
+	metadata: {},
 }
-
 ```
