@@ -86,5 +86,9 @@ https://www.visitstockholm.com/the-lgbt-guide-to-stockholm/
 ## Queer places in Gothenburg, Sweden
 https://www.goteborg.com/en/lgbt-gothenburg/
 
+## Atlas nienawiści (Atlas of Hate)
+A map of LGBT-free-zones in Poland.
+https://atlasnienawisci.pl/
+
 
 
