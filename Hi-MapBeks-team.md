@@ -17,6 +17,8 @@ Thomas
 
 ---
 
+
+
 Yes 😊 I saw your map!
 
 I love that you also provide infos about the "Anti-Discrimination Ordinances"-zones.
