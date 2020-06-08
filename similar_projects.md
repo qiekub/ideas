@@ -98,3 +98,5 @@ http://umap.openstreetmap.fr/en/map/lgbt-safe-spaces-in-the-philippines_447363
 Collected by MapBeks
 https://www.mapcontrib.xyz/t/8839cf-HIV_Testing_and_Counselling_Centers_in_the_Philippines
 
+## LGBTQI Spaces in the Philippines
+https://www.mapcontrib.xyz/t/0e23d7-LGBTQI_Spaces_in_the_Philippines
