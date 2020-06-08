@@ -37,3 +37,16 @@ lgbt_status: ["nominated", "verbal confirmation", "news featured"]
 I of course wondered 
 ```
 
+
+
+---
+
+
+
+It would be wonderful if you could share the map! 😍
+
+Even though I'm not sure about the website not having a real name. 🤷‍♀️ (The qiekub.org domain is just a working-title.)
+
+
+
+
