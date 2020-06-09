@@ -107,3 +107,7 @@ https://queer-traveling.tumblr.com/
 
 ## Queer Country Stories
 https://instagram.com/countryqueers
+
+## Queer places in Munich, Germany
+https://queermap.wixsite.com/home
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1V-eYnbD-7U_rxH_Srf-DZrFkuIA7A3Q-
