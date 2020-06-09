@@ -104,3 +104,6 @@ https://www.mapcontrib.xyz/t/0e23d7-LGBTQI_Spaces_in_the_Philippines
 ## Trans and genderqueer friendly accommodations
 A blog with a few information.
 https://queer-traveling.tumblr.com/
+
+## Queer Country Stories
+https://instagram.com/countryqueers
