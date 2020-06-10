@@ -1899,3 +1899,32 @@ addr:format = DE / US / GB / FR / ...
 
 
 
+-----------------
+
+
+
+!!!
+Optionale ungenaue Position, to keep places save
+!!!
+
+
+
+
+
+-----------------
+
+## MapBeks Zoom Webinar Links:
+- https://slides.com/mikkotamura/lgbtsafespacesparty/fullscreen#/35
+- https://docs.google.com/forms/d/e/1FAIpQLSdFD5antScIJAwUjmWouaQtmaLaB6lHDQJpQDkKDpMWTQP6jQ/viewform
+- https://mapbeks.github.io/MapBeks-SoBD/
+- https://mapbeks.github.io/MapBeks-Stories/
+
+### MHAWHEREness: Philippine Mental Health Services and Resources
+https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhEbs0/edit#gid=1386834576
+
+
+
+
+
+
+
