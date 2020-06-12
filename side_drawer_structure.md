@@ -1,6 +1,9 @@
 # QueerMap
 by Qiekub
 
+- About
+- Blog
+
 --------------------------
 
 ## Settings
@@ -8,10 +11,6 @@ by Qiekub
 - Theme (Dark/Light)
 
 --------------------------
-
-## Getting started
-- About Qiekub
-- Our Blog
 
 ## Contribute
 - Add a place
