@@ -3,6 +3,7 @@ by Qiekub
 
 - About
 - Blog
+- Similar projects
 
 --------------------------
 
