@@ -836,6 +836,8 @@ The place with the highest score is the best match.
 - icao
 - ref:??? (not "ref", but: ref:whc, ref:isil, ref:dhis2, ref:vatin, ref:wmo, ref:wigos, ref:bag, ref:bufa, ...)
 - fhrs:id (UK Food Hygiene Rating Scheme)
+- ISO3166-1 (ISO3166-1 is for countries)
+- ISO3166-1:
 
 ### geo information that change seldom
 (score: 5)
@@ -892,6 +894,7 @@ The place with the highest score is the best match.
 - name:etymology
 - flag
 - cycle_network
+- is_in:continent
 
 ### any other properties
 - ???
