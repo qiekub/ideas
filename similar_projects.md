@@ -115,4 +115,9 @@ Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1V-e
 ## Old network of places in Germany
 https://de.wikipedia.org/wiki/Gay-web
 
+## Map of A\*spec groups in Germany
+https://umap.openstreetmap.de/de/map/aspec-treffen_4104
+
+## List of A\*spec groups in Germany
+http://asex-web.de/
 
