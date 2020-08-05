@@ -1931,3 +1931,41 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 
 
 
+
+
+
+
+
+
+
+-----------------
+
+# TODO 2020-08-05
+
+- Add loading indicators
+- Add error messages
+- Add profileID to the changesets (an anonymous profile is the person isn't logged in)
+- Fix the navigation (I dunno how!!!)
+- Filter out closed-places
+- Filter out spam-places
+
+
+
+
+
+
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
