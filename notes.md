@@ -1942,10 +1942,11 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 
 # TODO 2020-08-05
 
-- Add loading indicators
+- ✅ Add loading indicator to the place-sidebar
+- Add more loading indicators
 - Add error messages
 - Add profileID to the changesets (an anonymous profile is the person isn't logged in)
-- Fix the navigation (I dunno how!!!)
+- ✅ Fix the navigation (I dunno how!!!)
 - Filter out closed-places
 - Filter out spam-places
 - ✅ Blue border when the search field is focused
@@ -1997,7 +1998,7 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 - ✅ sidebar stays
 - ✅ searchbar to the bottom
 - ✅ use new top buttons and filters layout
-- add Searchterm/Action-Suggestions above the searchbar
+- ✅ add Searchterm/Action-Suggestions above the searchbar
 
 
 
