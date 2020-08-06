@@ -1948,7 +1948,56 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 - Fix the navigation (I dunno how!!!)
 - Filter out closed-places
 - Filter out spam-places
+- ✅ Blue border when the search field is focused
+- auto-save all question changes
+- add a way to enter/edit addresses
+- make ilga-information be a dialog/popup in the middle of the screen
+- add a way to enter place-names in any language
+- make the audience-group-choosers typeable (and add more audience groups)
+- make the location-chooser work on tiny/mobile-screens
+- make the place be filterable by audience-groups
+- translate the map into the locale languages
+- hide places where the info is harmfull
+- settings for the language and dark/light-mode
+- ✅ fix smooth scroll on iOS in PresetChooser
 
+
+
+## Redesign
+- Bottom Left:
+	* Search bar
+	* Cards
+		- Place Suggestions
+		- Maintainer Orgs Infoamrtion
+	* Searchterm/Action Suggestions
+		- When only the map is shown
+			* Add Place
+			* Follow us
+			* Contribute / Help us / Maintain this site
+			* Contact
+			* Imprint
+			* Privacy Policy
+			* Feedback
+		- Place is open
+			* Improve
+			* Close sidebar / Back to the map
+			* This is Spam
+			* This place is closed
+		- Place is open AND logged in
+			* "Show suggested improvments"
+
+- ✅ Top Center: Filter Buttons
+- ✅ Top Left side: menu/drawer button + qiekub logo
+- Top Right side: profile/login button
+
+
+
+
+
+- ✅ sidebar stays
+- ✅ searchbar to the bottom
+- ✅ use new top buttons and filters layout
+- add Searchterm/Action-Suggestions above the searchbar
 
 
 
