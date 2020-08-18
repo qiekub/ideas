@@ -125,5 +125,8 @@ http://asex-web.de/
 https://queer.vn/queer-zone/
 Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1ko63vpJ92huklAnmIW6e9bgVGsk&ll=21.01265925992041%2C105.82000659999999&z=13
 
+## Refuge restrooms
+Safe restroom locations for trans, intersex, and gender nonconforming individuals.
+https://www.refugerestrooms.org/
 
 
