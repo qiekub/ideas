@@ -2347,3 +2347,12 @@ db.getCollection('Changesets').aggregate([
 
 
 
+-----------------
+
+# TODO 2020-08-16
+- operator for name replacement
+- opening_hours
+	* example: Su-Th 12:00-24:00; Fr-Sa 12:00-01:00
+
+
+
