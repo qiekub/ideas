@@ -1952,7 +1952,7 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 - ✅ Blue border when the search field is focused
 - auto-save all question changes
 - add a way to enter/edit addresses
-- make ilga-information be a dialog/popup in the middle of the screen
+- ❌ make ilga-information be a dialog/popup in the middle of the screen
 - add a way to enter place-names in any language
 - make the audience-group-choosers typeable (and add more audience groups)
 - make the location-chooser work on tiny/mobile-screens
@@ -1966,19 +1966,19 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 
 ## Redesign
 - Bottom Left:
-	* Search bar
+	* ✅ Search bar
 	* Cards
 		- Place Suggestions
 		- Maintainer Orgs Infoamrtion
 	* Searchterm/Action Suggestions
 		- When only the map is shown
-			* Add Place
+			* ✅ Add Place
 			* Follow us
 			* Contribute / Help us / Maintain this site
 			* Contact
 			* Imprint
 			* Privacy Policy
-			* Feedback
+			* ✅ Feedback
 		- Place is open
 			* Improve
 			* Close sidebar / Back to the map
