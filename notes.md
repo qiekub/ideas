@@ -2029,3 +2029,321 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 
 # TODO
 - visibiltiy
+
+
+
+
+
+
+
+
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- unentschiedene Changesets
+- unentschiedene Tags
+
+- approved Changesets
+- approved Tag
+
+
+- proposed tags
+	- key
+	- value
+	- newestDate (to sort by)
+
+
+
+
+
+
+
+
+
+```js
+db.getCollection('Changesets').aggregate([
+    {$match:{
+        "properties.forID": {$in: [ObjectId("5ea54682dd301aacac336eff")]},
+    }},
+    {$lookup:{
+        from: 'Edges',
+        let: {
+            changesetID: '$_id',
+        },
+        pipeline: [
+            {$match:{
+                $expr:{$and:[
+                    {$eq: ['$properties.edgeType',  'approved']},
+                    {$eq: ['$properties.toID',  '$$changesetID']},
+                ]}
+            }},
+            {$sort:{
+                "metadata.lastModified": 1,
+            }},
+            {$limit: 1},
+            {$project:{
+                _id: true,
+                //edgeType: '$properties.edgeType',
+                // tags: '$properties.tags',
+            }},
+        ],
+        as: 'edges',
+    }},
+    {$match: {
+        'edges.0': {$exists: true}
+    }},
+
+		{$set:{
+			"tags": { $objectToArray: "$properties.tags" },
+			"forID": "$properties.forID",
+			"antiSpamUserIdentifier": "$properties.antiSpamUserIdentifier",
+			"lastModified": "$metadata.lastModified",
+			//"edge": { $arrayElemAt: [ "$edges", 0 ] },
+		}},
+		{$unset: ["__typename","properties","metadata","edges"]},
+
+		// START restrict to the latest answer per antiSpamUserIdentifier (and place and key).
+		{$unwind: "$tags"},
+		{$set:{
+			"key": "$tags.k",
+			"value": "$tags.v",
+		}},
+		{$unset: "tags"},
+
+
+		{$sort:{
+			"lastModified": 1,
+			"_id": 1,
+		}},
+		{$group:{
+			_id: {$concat:[
+				{$toString:"$antiSpamUserIdentifier"},
+				"_",
+				{$toString:"$forID"},
+				"_",
+				{$toString:"$key"},
+			]},
+			doc: {$first:"$$ROOT"},
+		}},
+		{$replaceRoot:{newRoot:"$doc"}},
+		// END restrict to the latest answer per antiSpamUserIdentifier (and place and key).
+
+		{$sort:{
+			"key": 1,
+			"value": 1,
+		}},
+])
+```
+
+
+
+
+
+
+
+
+
+
+published Boolean
+
+
+
+
+
+
+
+```js
+db.getCollection('Changesets').aggregate([
+		{$match:{
+			"properties.forID": {$in: [ObjectId("5f2a59ab15943e426b26bb0e")]},
+		}},
+		{$lookup:{
+			from: 'Edges',
+			let: {
+				changesetID: '$_id',
+			},
+			pipeline: [
+				{$match:{
+					$expr:{$and:[
+						{$in: ['$properties.edgeType', ["approved", "rejected"]] },
+						{$eq: ['$properties.toID',  '$$changesetID']},
+					]}
+				}},
+				{$sort:{
+					"metadata.lastModified": 1,
+				}},
+				{$limit: 1},
+				{$project:{
+					_id: false,
+					edgeType: '$properties.edgeType',
+				}},
+			],
+			as: 'edges_doc',
+		}},
+
+		{$set:{
+			"tags": { $objectToArray: "$properties.tags" },
+			"forID": "$properties.forID",
+			"antiSpamUserIdentifier": "$properties.antiSpamUserIdentifier",
+			"lastModified": "$metadata.lastModified",
+			"edge_doc": { $arrayElemAt: [ "$edges_doc", 0 ] },
+		}},
+		{$unset: ["__typename","properties","metadata","edges_doc"]},
+
+		{$unwind: "$tags"},
+		{$set:{
+			"key": "$tags.k",
+			"value": "$tags.v",
+		}},
+		{$unset: "tags"},
+
+		{$lookup:{
+			from: 'Edges',
+			let: {
+				changesetID: '$_id',
+				tagKey: '$key',
+			},
+			pipeline: [
+				{$match:{
+					$expr:{$and:[
+						{$in: ['$properties.edgeType', ["approvedTag", "rejectedTag"]] },
+						{$eq: ['$properties.toID',  '$$changesetID']},
+						{$eq: ['$properties.tags.forTag',  '$$tagKey']},
+					]}
+				}},
+				{$sort:{
+					"metadata.lastModified": 1,
+				}},
+				{$limit: 1},
+				{$project:{
+					_id: true,
+					edgeType: '$properties.edgeType',
+				}},
+			],
+			as: 'edges_tags',
+		}},
+
+		{$set:{
+			"edge_tag": { $arrayElemAt: [ "$edges_tags", 0 ] },
+		}},
+		{$set:{
+			"doc_decision": '$edge_doc.edgeType',
+			"tag_decision": '$edge_tag.edgeType',
+		}},
+		{$set:{
+			doc_decision: { $ifNull: [ "$doc_decision", null ] },
+			tag_decision: { $ifNull: [ "$tag_decision", null ] },
+		}},
+		{$unset: ['edges_tags','edge_doc','edge_tag']},
+
+		// START restrict to the latest answer per antiSpamUserIdentifier (and place and key).
+		{$sort:{
+			"lastModified": 1,
+			"_id": 1,
+		}},
+		{$group:{
+			_id: {$concat:[
+				{$toString:"$antiSpamUserIdentifier"},
+				"_",
+				{$toString:"$forID"},
+				"_",
+				{$toString:"$key"},
+			]},
+			doc: {$first:"$$ROOT"},
+			changesetIDs: {$addToSet:"$$ROOT._id"},
+		}},
+		{$set:{
+			'doc.changesetIDs': "$changesetIDs",
+		}},
+		{$replaceRoot:{newRoot:"$doc"}},
+		{$unset: 'antiSpamUserIdentifier'},
+		// END restrict to the latest answer per antiSpamUserIdentifier (and place and key).
+
+
+
+
+
+		// only get approved key-value pairs
+		{$match:{
+			$expr:{$and:[
+				{$ne: ['$doc_decision', 'rejected']},
+				{$ne: ['$tag_decision', 'rejectedTag']},
+				{$or:[
+					{$eq: ['$doc_decision', 'approved']},
+					{$eq: ['$tag_decision', 'approvedTag']},
+				]},
+			]}
+		}},
+
+		// only get fully undecided key-value pairs
+		{$match:{
+			$expr:{$and:[
+				{$eq: ['$doc_decision',  null]},
+				{$eq: ['$tag_decision',  null]},
+			]}
+		}},
+
+		// only get key-value pairs without a tag-decision
+		{$match:{
+			$expr:{$or:[
+				{$and:[
+					{$eq: ['$doc_decision',  null]},
+					{$eq: ['$tag_decision',  null]},
+				]},
+				{$and:[
+					{$ne: ['$doc_decision',  null]},
+					{$eq: ['$tag_decision',  null]},
+				]},
+			]}
+		}},
+
+
+
+
+
+		{$sort:{
+			"key": 1,
+			"value": 1,
+			"lastModified": 1
+		}},
+])
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
