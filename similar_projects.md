@@ -121,3 +121,9 @@ https://umap.openstreetmap.de/de/map/aspec-treffen_4104
 ## List of A\*spec groups in Germany
 http://asex-web.de/
 
+## Queer Zone — LGBTQ venues in Hanoi city, Vietnam
+https://queer.vn/queer-zone/
+Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1ko63vpJ92huklAnmIW6e9bgVGsk&ll=21.01265925992041%2C105.82000659999999&z=13
+
+
+
