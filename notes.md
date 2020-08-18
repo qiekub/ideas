@@ -2018,4 +2018,10 @@ https://docs.google.com/spreadsheets/d/15HDLtc90Dx7Pb3NBq_dHZsk8qT4-AqDWv_td8zhE
 
 
 
+# What we talked about:
+- ✅ logo
+	* ✅ logo for queermap
+	* ✅ for qiekub
+- view everything as a list, not a map too (orgs without a place)
+- ✅ put in a link to the public telegram group
 
