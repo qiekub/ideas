@@ -1,0 +1,133 @@
+<script>
+
+
+/*
+fetch(url, {
+	method: 'POST',
+	body: 'hello world???',
+}).then((response) => {
+  // response.body is a readable stream.
+  // Calling getReader() gives us exclusive access to
+  // the stream's content
+  var reader = response.body.getReader();
+  var bytesReceived = 0;
+
+  // read() returns a promise that resolves
+  // when a value has been received
+  return reader.read().then(function processResult(result) {
+    // Result objects contain two properties:
+    // done  - true if the stream has already given
+    //         you all its data.
+    // value - some data. Always undefined when
+    //         done is true.
+    if (result.done) {
+      console.log('Fetch complete');
+      return;
+    }
+
+    const value = result.value
+    console.log('decoded', decoder.decode(value))
+
+    // // result.value for fetch streams is a Uint8Array
+    // bytesReceived += result.value.length;
+    // console.log('Received', bytesReceived, 'bytes of data so far');
+
+    // Read some more, and call this function again
+    return reader.read().then(processResult);
+  })
+})
+*/
+
+function displayMarker(markerArray){
+	console.log('markerArray', markerArray)
+}
+
+
+const url = 'http://0.0.0.0:11692/markers/'
+const decoder = new TextDecoder()
+
+fetch(url, {
+	method: 'GET',
+	// body: 'hello world???',
+})
+.then((response) => {
+	const reader = response.body.getReader()
+	const stream = new ReadableStream({
+		start(controller) {
+			let startOfNext = ''
+
+			function push() {
+
+				reader.read().then(({ done, value }) => {
+
+					const text = startOfNext+decoder.decode(value)
+
+					let closed_parts = null
+
+					const matches_full = /^({"_id":".*?})$/.exec(text)
+					if (matches_full) {
+						closed_parts = matches_full[1]
+						startOfNext = ''
+					}else{
+						const matches_open_end = /(.*})({"_id":".*?)$/.exec(text)
+						if (matches_open_end) {
+							closed_parts = matches_open_end[1]
+							startOfNext = matches_open_end[2]
+						}else{
+							startOfNext = text
+						}
+					}
+					
+
+					if (closed_parts !== null) {
+						let parts = closed_parts.split('}{"_id":"')
+
+						let firstPart = parts.shift()
+						if (firstPart && parts.length > 0) {
+							firstPart = firstPart+'}'
+						}
+
+						let lastPart = parts.pop()
+						if (lastPart) {
+							lastPart = '{"_id":"'+lastPart
+						}
+
+						parts = parts.map(part => '{"_id":"'+part+'}')
+
+						parts = [
+							firstPart,
+							...parts,
+							lastPart,
+						]
+						.filter(Boolean)
+						.map(part => {
+							try {
+								return JSON.parse(part)
+							}catch (error) {
+								console.error(part, error)
+							}
+							return null
+						})
+						.filter(Boolean)
+
+						displayMarker(parts)
+					}
+
+
+					if (done) {
+						controller.close()
+						return
+					}else{
+						controller.enqueue(value)
+						push()
+					}
+				})
+			}
+			push()
+		}
+	})
+
+	return null // new Response(stream)
+})
+
+</script>
