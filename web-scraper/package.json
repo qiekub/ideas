@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@mozilla/readability": "^0.3.0",
+    "cheerio": "^1.0.0-rc.3",
+    "jsdom": "^16.4.0",
+    "n-gram": "^1.1.2",
+    "node-fetch": "^2.6.1",
+    "page-metadata-parser": "^1.1.4",
+    "puppeteer": "^5.2.1",
+    "stopwords-iso": "^1.1.0"
+  }
+}
