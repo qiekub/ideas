@@ -259,12 +259,8 @@ function parseURL(url){
 			article.textContent = customTrim(article.textContent)
 
 			let generatedKeywords = []
-			let text = article.textContent
-			if (!(!!article.textContent)) {
-				text = metadata.description
-			}
-			if (!!text) {
-				generatedKeywords = getKeywords(text)
+			if (!!article.textContent) {
+				generatedKeywords = getKeywords(article.textContent)
 			}
 
 			if (!!metadata.keywords) {
