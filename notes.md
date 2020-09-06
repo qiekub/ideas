@@ -2356,3 +2356,97 @@ db.getCollection('Changesets').aggregate([
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Links
+
+## Backblaze
+- https://github.com/yakovkhalinsky/backblaze-b2
+- https://github.com/jamesloper/easy-backblaze
+
+## Working with text
+- https://github.com/words/automated-readability
+- https://github.com/retextjs/retext-equality
+- https://github.com/google-research/bert/blob/master/multilingual.md (https://github.com/google-research/bert#pre-trained-models)
+- https://github.com/hanxiao/bert-as-service#getting-elmo-like-contextual-word-embedding
+- https://github.com/stopwords-iso/stopwords-iso
+
+## Web Offline Maps
+- https://github.com/tbicr/OfflineMap
+
+## Web scraping
+- https://github.com/mozilla/page-metadata-parser
+- https://www.scraperapi.com/blog/5-tips-for-web-scraping
+- https://github.com/puppeteer/puppeteer
+- https://github.com/mozilla/readability
+- https://github.com/cure53/DOMPurify
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
