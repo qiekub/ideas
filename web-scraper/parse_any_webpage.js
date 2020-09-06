@@ -271,11 +271,18 @@ function parseURL(url){
 				delete metadata.keywords
 			}
 
+			let preset = 'website'
+			if (!!metadata.type) {
+				preset = 'website/'+metadata.type
+				delete metadata.type
+			}
+
 			resolve({
 				article,
 				metadata,
 				foundKeywords,
 				generatedKeywords,
+				preset,
 			})
 		})
 		.catch(reject)
