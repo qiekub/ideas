@@ -278,10 +278,17 @@ function parseURL(url){
 			}
 
 			resolve({
-				article,
-				metadata,
-				foundKeywords,
-				generatedKeywords,
+				...metadata,
+				title: metadata.title || article.title,
+				description: metadata.description || article.excerpt,
+				// 'content': article.content,
+				'content:plaintext': article.textContent,
+				byline: article.byline,
+				dir: article.dir,
+				length: article.length,
+				provider: metadata.provider || article.siteName,
+				'keywords:found': foundKeywords,
+				'keywords:generated': generatedKeywords,
 				preset,
 			})
 		})
