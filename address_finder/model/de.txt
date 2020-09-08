@@ -1,0 +1,439 @@
+{
+    "classifier": {
+        "classFeatures": {
+            "": {
+                "0": 16,
+                "1": 6,
+                "2": 6,
+                "3": 6,
+                "4": 6,
+                "5": 6,
+                "6": 6,
+                "7": 11,
+                "8": 5,
+                "9": 5,
+                "10": 5,
+                "11": 14,
+                "12": 10,
+                "13": 5,
+                "14": 9,
+                "15": 9,
+                "16": 6
+            },
+            "LOC": {
+                "0": 2,
+                "7": 2,
+                "8": 2,
+                "9": 2,
+                "10": 2,
+                "11": 4,
+                "12": 3,
+                "13": 2,
+                "14": 3,
+                "15": 3,
+                "16": 2
+            }
+        },
+        "classTotals": {
+            "": 35,
+            "LOC": 5
+        },
+        "totalExamples": 39,
+        "smoothing": 1
+    },
+    "docs": [
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "wir"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "wir",
+                "bau"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "wir",
+                "bau",
+                "in"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "wir",
+                "bau",
+                "in",
+                "_"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "wir",
+                "bau",
+                "in",
+                "_",
+                "woch"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "bau",
+                "in",
+                "_",
+                "woch",
+                "__"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "in",
+                "_",
+                "woch",
+                "__",
+                "toll"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "_",
+                "woch",
+                "__",
+                "toll",
+                "schloss"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "woch",
+                "__",
+                "toll",
+                "schloss",
+                "am"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "__",
+                "toll",
+                "schloss",
+                "am",
+                "rhein"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "toll",
+                "schloss",
+                "am",
+                "rhein",
+                "E"
+            ]
+        },
+        {
+            "label": "LOC",
+            "text": [
+                "schloss",
+                "am",
+                "rhein",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "am",
+                "rhein",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "rhein",
+                "E",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "bonn"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "bonn",
+                "ist"
+            ]
+        },
+        {
+            "label": "LOC",
+            "text": [
+                "S",
+                "S",
+                "bonn",
+                "ist",
+                "toll"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "bonn",
+                "ist",
+                "toll"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "toll",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "bonn",
+                "ist",
+                "toll",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "ist",
+                "toll",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "toll",
+                "E",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "wo"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "wo",
+                "liegt"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "wo",
+                "liegt",
+                "bonn"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "wo",
+                "liegt",
+                "bonn"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "bonn",
+                "E"
+            ]
+        },
+        {
+            "label": "LOC",
+            "text": [
+                "wo",
+                "liegt",
+                "bonn",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "liegt",
+                "bonn",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "bonn",
+                "E",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "S",
+                "wo"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "S",
+                "wo",
+                "liegt"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "S",
+                "wo",
+                "liegt",
+                "berlin"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "S",
+                "wo",
+                "liegt",
+                "berlin"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "berlin",
+                "E"
+            ]
+        },
+        {
+            "label": "LOC",
+            "text": [
+                "wo",
+                "liegt",
+                "berlin",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "liegt",
+                "berlin",
+                "E",
+                "E",
+                "E"
+            ]
+        },
+        {
+            "label": "",
+            "text": [
+                "berlin",
+                "E",
+                "E",
+                "E",
+                "E"
+            ]
+        }
+    ],
+    "features": {
+        "S": 40,
+        "wir": 5,
+        "bau": 5,
+        "in": 5,
+        "_": 5,
+        "woch": 5,
+        "__": 5,
+        "toll": 11,
+        "schloss": 5,
+        "am": 5,
+        "rhein": 5,
+        "E": 40,
+        "bonn": 11,
+        "ist": 5,
+        "wo": 10,
+        "liegt": 10,
+        "berlin": 6
+    },
+    "stemmer": {},
+    "lastAdded": 38,
+    "events": {
+        "_events": {},
+        "_eventsCount": 0
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "natural": "^2.1.5",
+    "snowball-german": "^1.0.0",
+    "stemmer_es": "^1.0.2"
+  }
+}
