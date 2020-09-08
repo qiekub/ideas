@@ -271,9 +271,9 @@ function parseURL(url){
 				delete metadata.keywords
 			}
 
-			let preset = 'website'
+			let og_type = 'website'
 			if (!!metadata.type) {
-				preset = 'website/'+metadata.type
+				og_type = metadata.type
 				delete metadata.type
 			}
 
@@ -289,7 +289,7 @@ function parseURL(url){
 				provider: metadata.provider || article.siteName,
 				'keywords:found': foundKeywords,
 				'keywords:generated': generatedKeywords,
-				preset,
+				'og:type': og_type,
 			})
 		})
 		.catch(reject)
