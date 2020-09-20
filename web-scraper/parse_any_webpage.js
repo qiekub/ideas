@@ -5,6 +5,8 @@ const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const virtualConsole = new jsdom.VirtualConsole() // use VirtualConsole to hide parsing errors
 
+const striptags = require('striptags')
+
 const { getMetadata, metadataRuleSets } = require('page-metadata-parser')
 const { Readability } = require('@mozilla/readability')
 
@@ -210,22 +212,33 @@ function parseURL(url){
 
 			const $ = cheerio.load(html)
 			$('.references').remove() // remove wikipedia references
+			$('.reference').remove()
+
+
 
 			// find keywords that @mozilla/readability isn't finding
 			let foundKeywords = []
+
 			// GitHub
 			$('a.topic-tag').each(function(i, elem) {
 				foundKeywords.push(customTrim($(this).text()))
 			})
+			
 			// Tagesschau
 			$('a[rel="tag"]').each(function(i, elem) {
 				foundKeywords.push(customTrim($(this).text()))
 			})
+			
 			// Mannschaft
 			$('a.entry-tag').each(function(i, elem) {
 				foundKeywords.push(customTrim($(this).text()))
 			})
 			$('.entry-category').each(function(i, elem) {
+				foundKeywords.push(customTrim($(this).text()))
+			})
+
+			// wikinews categories
+			$('.catlinks .mw-normal-catlinks ul li a').each(function(i, elem) {
 				foundKeywords.push(customTrim($(this).text()))
 			})
 
@@ -240,7 +253,9 @@ function parseURL(url){
 			})
 
 			const document = doc.window.document
-			const article = new Readability(document).parse() || {}
+			const article = new Readability(document, {
+				keepClasses: true,
+			}).parse() || {}
 			const metadata = getMetadata(document, url, {
 				...metadataRuleSets,
 				...customRuleSets,
@@ -254,8 +269,9 @@ function parseURL(url){
 				return null
 			}
 
-			delete article.content
-			// article.content = (article.content || '').replace(/(?:<!--.*?-->)/gm, '').replace(/\\n/gm, '\n')
+
+			// delete article.content
+			article.content = (article.content || '').replace(/(?:<!--(.|\n)*?-->)/g, '').replace(/\\n/gm, '\n')
 			article.textContent = customTrim(article.textContent)
 
 			let generatedKeywords = []
@@ -319,6 +335,8 @@ url = 'https://www.theverge.com/2020/9/5/21423889/fortnite-epic-apple-preliminar
 // url = 'http://www.anyway-koeln.de/lesbische-s__chwule-bisexuelle-und-trans-jugendliche-durch-corona-stark-belastet/'
 // url = 'https://www.facebook.com/XRBonn/photos/a.808081589555471/1193554967674796/'
 // url = 'https://eji.org/'
+url = 'https://en.wikinews.org/wiki/Germany_says_Alexei_Navalny_poisoned_with_Novichok'
+// url = 'https://en.wikipedia.org/wiki/French_Revolutionary_Wars'
 
 parseURL(url)
 .then(metadata => {
