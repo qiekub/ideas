@@ -1,0 +1,14 @@
+wednesday april _ ____
+on monday two us/ENTITY republican/ENTITY parti/ENTITY greg/ENTITY walden/ENTITY frank/ENTITY pallon/ENTITY jr/ENTITY respect the chairman and the rank member of the unit/ENTITY state/ENTITY hous/ENTITY committe/ENTITY on/ENTITY energi/ENTITY and/ENTITY commerc/ENTITY cowrot a public letter to jim/ENTITY zemlin/ENTITY execut director of the linux/ENTITY foundat/ENTITY opensourc/ENTITY softwar/ENTITY oss and improv it secur they request zemlin to answer their question by no later than april __
+the letter contain the follow four question each of the first two has a further two followup question
+has the cii core/ENTITY infrastructur/ENTITY initi/ENTITY perform a comprehens studi of which piec of oss are most crucial to the global inform infrastructur
+if not doe the cii plan to perform such a studi
+what would the cii need in order to do so
+has the cii or ani other organ compil ani statist on oss usag
+if not doe the cii plan to perform such a studi
+what would the cii need in order to do so
+in your estim how sustain and stabl is the oss ecosystem
+base on your respons to the previous question how can the oss ecosystem be made more sustain and stabl
+walden and pallon exemplifi a critic cybersecur vulner that allow the hack of websit and password and million of medic record in ____ they also wrote that in respons to that vulner the linux foundat establish a multimillion dollar project the core infrastructur initi intend to improv the global infrastuctur of such softwar
+the politician note larg tech compani like appl/ENTITY inc/ENTITY adob/ENTITY system/ENTITY respond more quick to such critic vulner than distributor and develop of opensourc softwar
+opensourc softwar is public access and usual freelylicens for a wide rang of use such as modif and commerci use walden and pallon also express prais toward opensourc softwar and cite a ____ survey conduct by black duck softwar say __ of compani use such softwar

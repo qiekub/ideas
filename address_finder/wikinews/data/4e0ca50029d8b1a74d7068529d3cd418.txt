@@ -1,0 +1,34 @@
+saturday octob _ ____ the ____ version of codenam maverick merkaat a free oper system is to be releas in the next few day french/ENTITY wikinew/ENTITY baptist has interview fabric fabrice_sp on ubuntu an ubuntus motu master of the univers member of the develop team of the oper system
+ubuntu is a comput oper system base on which is creat collabor by thousand of peopl there are three offici ubuntu version ubuntu desktop edit for desktop and laptop pcs ubuntu/ENTITY netbook/ENTITY edit/ENTITY for netbook and ubuntu server edit for use in server
+baptist when did you first becom interest in comput when did you start program
+fabric about ____ year ago my first comput was an mo_ and i start to get interest in program at that age i wrote my first program a game in and it was so big that it use two tape yes yes tape i am __ so it been quit a while sinc i becam interest in comput i was and continu to be an baptist what is your profess
+fabric i am product manag in a madrid comput store so i am still in the same field even when i have not written a line of code in my job for a long time my particip in the develop of ubuntu consist of maintain the technic side
+baptist you particip in the develop of ubuntu as motu what is it
+fabric motus are respons for the softwar packag that are not includ on the cd iso/ENTITY imag/ENTITY about _____ for we are call packag those who build packag
+baptist becom a motu is not so easi right how did you becom one
+fabric it not that complic you should understand well how the packag work and after convinc other motus that we can not break everyth we can do it it is a question of integr into the communiti and be trust by other motus basic between my first collabor in the develop of ubuntu until i becam motu i spent a year and a half but some user becam motu faster i think the record is _ or _ month
+baptist how do you join it is there a vote like wikipedia to elect administr an examin
+fabric it is a vote dure a virtual meet via irc howev you must have previous prepar your propos by collect the opinion of other motus the entir process is describ here for those who are interest baptist is there train to becom motu
+fabric there is no train itself the simplest way is to take charg and connect to the motu irc channel there is also plenti of info in the ubuntu wiki on how to particip is a good start point and at there are also special week of present dedic to peopl interest in the develop of ubuntu see for detail be selftaught help a lot for that
+baptist how mani motus are there
+fabric ___ motus depend on launchpad the project manag system for ubuntu on the internet but the exact number of asset is less it is a few peopl for _____ program maintain by the ubuntu motu we work close with debian and current onli ____ applic from debian are suitabl for ubuntu but it still not bad
+baptist how do you manag to work do you work alon instead or rather a group which languag
+fabric a bit of both english is clear domin and much of the coordin is via irc as well as through mail list there are ten motu team dedic to certain subject the full list appear here url team everi motu doe what they think is best for ubuntu within the limit of their right of cours
+baptist an oper system is veri larg on what part doe motu focus what languag is use
+fabric as i said befor motus are packag this mean that we maintain these applic in ubuntu so that they compil instal and work correct i tend to say that we are inclus we work on those part of the archiv that are not seed ie not distribut in the iso imag server an desktop motu method are similar to the qa team in debian we have the challeng of have the latest applic possibl without destabil ubuntu the concept of universemain is be lost and this is the definit that come closest to what we do now
+baptist what advic would you give to someon want to becom a motu
+fabric to be selftaught do not be asham to ask question on irc i lost four month while wait for thing to happen by themselv and them to be proactiv
+baptist what did you work on on maverick merkaat how much time did you spend
+fabric i work main at the begin of the cycl to updat the applic that i had upload dure the previous cycl and to sponsor the upload of nonmotu contributor it is import that motus help train the new generat and the closer we approach the end of the cycl the more i was in qa that is fix applic that do not compil or that are not instal that repres about _ to _ hour a day in addit to my job
+baptist how was the develop of maverick
+fabric relat better than lucid ubuntu was more stabl throughout the develop and no major problem occur i still rememb that dure the develop of lucid i could not boot my pc for _ week even if the cycl was shorter due to be releas on ______
+baptist in your opinion what are the best innov on the new version of ubuntu
+fabric maverick is a version of consolid so there are few major innov i think a strength of ubuntu is that the instal is simpl and the option select by default are those that are most recommend so i appreci have particular stabl but recent version of softwar that i use regular
+baptist are there still thing to tweak for this sunday
+fabric yes still even if sinc this afternoon the upload are fix as the version is not massiv instal we cant discov all the bug so one month after the releas is as import as the month prior to the stabil of the releas
+baptist what is the futur of ubuntu and what major project are under construct after ____
+fabric all of this will be defin dure a meet that will take place in orlando between octob __ and __ call ud ubuntu develop summit i do not know what will be decid although some guidelin are previous known virtual perform compat hardwar anyon can go there it open to everyon by con as it is in orlando it limit
+baptist overal what is your opinion on wikipedia
+fabric i use it regular to read articl includ the duti of my kid yet their teacher forbid them to take the content and idea on wikipedia and wiki in general it is a good tool for collabor work i set it up in the store in which i work for some subject
+baptist thank for this interview and good luck
+fabric noth it was a pleasur

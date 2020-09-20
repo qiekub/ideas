@@ -1,0 +1,9 @@
+friday may __ ____
+a routin upgrad of antivirus softwar has disabl ten of thousand of pcs in china accord to local media report the faulti upgrad caus norton/ENTITY antivirus/ENTITY softwar to remov critic window/ENTITY xp/ENTITY system file the report state
+the system file move or delet by the softwar includ netapi__dl and lsasrvdll accord to sohu news the softwar incorrect identifi the file as be infect with the backdoorhaxdoor trojan with these file remov window xp will no longer start up and even the system safe mode no longer function onli chineselanguag version of window appear to be affect so far
+the norton antivirus applic is part of norton ___ suit and it is preinstal in mani pcs sold in china indic that the problem could potenti affect million of user
+patch pcs vulner
+the problem appear to stem from an updat microsoft releas in novemb ____ which contain new version of some system file as pcs which have not appli this updat are unaffect
+symantec has acknowledg the issu and is work on a solut report said although there is no appar mention of it on the compani chines websit
+pc owner affect by the issu may be abl to restor the miss file from their window xp instal cds howev sinc piraci of window xp is common in china some user may not have access to these
+extern link symantec china

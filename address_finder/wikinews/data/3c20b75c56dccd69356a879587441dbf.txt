@@ -1,0 +1,4 @@
+saturday januari __ ____ symantec admit a secur flaw
+symantec owner of the secur softwar norton systemwork admit the exist of a secur flaw that can be exploit by malwar the flaw is of the rootkit type
+a rootkit is a set of tool capabl of conceal process file and other inform prevent the detect of malwar such as virus spywar and invas program
+in norton the rootkit work as the follow a folder name nprotect keep all the file delet by the user it allow file to be undelet the problem is that norton as a rootkit hide the folder not onli from the user but also from the oper system it prevent antivirus and secur tool from scan the folder creat a hide place for malwar symantec said that it was to ensur that a user would not accident delet the file in the directori they also claim to have no knowledg of ani attempt to use this flaw and the problem can be easili solv by a normal softwar updat

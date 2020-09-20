@@ -1,0 +1,28 @@
+tuesday januari __ ____ screenshot of internet explor _
+the long await internet/ENTITY explor/ENTITY __ beta preview was to the public on januari __
+larg amount of the architectur includ the secur framework have been complet overhaul part as a result of these secur enhanc the browser will be a standalon applic rather than integr with the window shell
+the final beta _ is schedul by microsoft to be releas in april with the full version schedul for the summer of ____
+accord to microsoft announc the beta will onli run on window/ENTITY xp/ENTITY servic/ENTITY pack/ENTITY _/ENTITY system but the final releas version is intend to be abl to run on window/ENTITY vista/ENTITY window/ENTITY xp/ENTITY profession/ENTITY x__/ENTITY edit/ENTITY window/ENTITY server/ENTITY ____/ENTITY as well
+new featur
+version _ includ a number of new featur
+improv render engin internet explor render engin codenam trident has been complet rewritten to compet with the faster render engin of opera and firefox
+tab brows user can now have sever web page in the same window via tab
+quick tab enabl user to view thumbnail imag of all open tab in one view
+tab group enabl user to organ multipl tab in the same categori as a singl tab group that can be save as a favorit and the user can open all the site in the tab group with a singl click on the arrow to the right of the folder
+page zoom enabl user to increas or decreas the page size for easier view
+idn support
+rss support version __ now support which allow user to gather news feed from web site that have rss support microsoft implement rss in a share librari known as a dll so that third parti develop can develop their own rssenabl applic
+alpha transpar version __ now has nativ support for alpha transpar this allow certain imag pngs to have opaqu area that can blend in with other imag and text
+opensearch extens user of version __ can now use search engin by type in search term direct from the browser toolbar
+administr improv all previous and new featur are manag via group polici includ the phish filter and all browser addon
+improv css support version __ has improv support which mean internet explor will now render page closer to the method defin by the a standard bodi for world wide web technolog this mean web page design and develop will have an easier time design web site and applic to look the same on all web browser
+improv ajax function applic that use a web develop techniqu call to make interact web applic will run more effici becaus microsoft has includ support for it main compon the object into the browser previous version of internet explor requir a helper applic call an object to implement this function a good exampl of an ajax applic is googl popular googl/ENTITY map/ENTITY enhanc secur microsoft has attempt to fix a number of secur issu with how internet explor behav this includ
+protect mode in protect mode internet explor _ in window vista is complet unabl to modifi user or system file and set
+internet explor __ is a standalon applic rather than integr with the window shell like version __ this mean that you can no longer open a folder type in a url and get a web page
+url handl protect
+protect against crossdomain script attack
+antiphish and antispoof filter
+secur status bar colorcod visual and icon cue to the safeti and trustworthi of a web site
+earli releas
+the current releas is intend for compat test by develop and it profession and is not aim at the general public
+extern link microsoft ie_ download page cpc view ax tiff viewer

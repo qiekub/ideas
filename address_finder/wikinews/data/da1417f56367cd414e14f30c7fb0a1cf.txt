@@ -1,0 +1,8 @@
+friday april _ ____
+googl engin reza behforooz announc in a googl blog entri on march __ that search engin googl has enabl link prefetch for some of their search result the link prefetch has not been standard but it can enabl faster page load of googl search result in mozilla and firefox browser that have the featur enabl
+when googl determin a user has a high likelihood of click on a search result googl insert a tag into the result they send out in respons to a search some browser can then preload that page so in the event the user doe select the page it load veri quick
+for exampl a googl search for wikipedia today by yield an html page with this code includ
+while not a formal benchmark in casual test by firefox ___ load the wikipedia main page in about half the time when the page had been link prefetch as oppos to when it had not been the load time were approxim __ second and _ second respect internet explor __ load the same page in slight less than _ second
+user who want to disabl prefetch in firefox can do the follow in the address bar
+scroll down to the set networkprefetchnext
+rightclick on the valu and click toggl

@@ -1,0 +1,79 @@
+friday may __ ____
+this interview intend to provid some insight into an upcom free unifi data synchron solut for free softwar desktop such as common use as part of the oper system
+hi cornelius armin and tobia as you are now get close to version __ of opensync which is expect to becom the new synchronis framework for kde and other free desktop we are quit interest in the merit it can provid for kde user and for develop as well as for the open sourc communiti as a whole so there one keyquest befor i move deeper into the detail of opensync
+what doe opensync accomplish that no one did befor
+first of all it doe it job of synchron data like addressbook and calendar between desktop applic and mobil devic like pdas and cell phone
+but the new thing about opensync is that it isnt tie to a particular devic or a specif platform it provid an extens and modular framework that is easi to adopt for applic develop and peopl implement support for sync with mobil devic
+opensync is also independ of the desktop platform it will be the common sync backend for at least kde and gnome and other project are like to join that mean that the free desktop will have one common sync solut this is someth realli new
+how do the endus profit from use synch solut that interfac with opensync as framework
+first the user will be abl to actual synchron all their data by use one common framework there wont be ani miss link where one applic can sync one set of devic and anoth applic a differ one with opensync all applic can sync all devic
+second the user will get a consist and common user interfac for sync across all applic and devic this will be much simpler to use than the current incoher collect of sync program you need if you have more than the veri basic need
+how doe opensync help develop with code
+it a veri flexibl and welldesign framework that make it quit easi for develop to add support for new devic and new type of data it also veri easi to add support for opensync to applic
+the big achiev of opensync is that it hide all the gori detail of sync from the develop who work on applic and devic support that make it possibl for the develop to concentr on their area of expertis without have to care what go on behind the scene
+i have written quit a lot of synchron code in the past trust me it much better if someon just take care of it for you and that what opensync doe
+anoth point to mention is the python wrapper for opensync so you are not bound to c or c but can develop plugin in a high level script languag
+whi should produc of portabl devic get involv with your team
+opensync will be the one common sync solut for the free desktop that mean there is a singl point of contact for devic manufactur who want to add support for their devic that much more feasibl than address all the differ applic and solut we had befor with opensync it hope will becom interest for manufactur to offici support linux for their devic
+do you also plan to support applic of opensync in proprietari system like osx and window
+opensync is design to be crossplatform so it is abl to run on other system like window how well this work is alway a question of peopl actual use and develop for this system as far as i know there isnt a real window communiti around opensync yet but the technic foundat is there so if there is somebodi interest in work on a unifi sync solut on window everybodi is welcom to join the project
+what doe your synchronis framework do for kde and for kitchensync in particular
+opensync replac the kdespecif synchron framework we had befor even in kde we had sever separ sync implement and with opensync we can get replac them with a common framework we had a more generic sync solut in kde under develop this was quit similar from a design point of view to opensync but it never got to the level of matur we would have need becaus of lack of resourc as opensync fill this gap we are happi to be abl to remov our old code and now concentr on our core busi
+who how and whi
+what was your person reason for get involv with opensync
+i wrote a lot of synchron code in the past which main came from the time where i was maintain korgan and work on kaddressbook but this alway was driven by necess and not passion i want to have all my calendar and contact data in one place but my main object was to work on the applic and user interfac handl the data and not on the under code synchron the data
+so when the opensync project was creat i was veri interest at guadec in stuttgart i met with armin the maintain of opensync and we talk about integr opensync with kde everyth seem to fit togeth quit well so at linuxtag the same year we had anoth meet with some more kde peopl in the end we agre to go with opensync and a coupl of week later we met again in nuernberg for three day of hack and creat the kde frontend for opensync in retrospect it was a veri pleasant and straightforward process to get where we are now
+my reason to get involv or better to start opensync was my involv with it predecessor multisync i am work as a system administr for a small consult compani and so i saw some problem when tri to find a synchron solut for linux
+at that point i join the multisync project to implement some plugin that i thought would be nice to have after some time i becam the maintain of the project but i was unhappi with some technic aspect of the project especi the tight coupl between the sync logic and the gui it depend on gnome librari and it lack of flexibl
+well i have been a kde pim develop for sever year now so there was no way around get in touch with synchron and kitchensync although i like the idea of kitchensync i hate the code and the user interfac so when we discuss to switch to opensync and reimplement the user interfac i volunt immedi
+can you tell us a bit about your further plan and idea
+the next thing will be the __ releas of opensync we will releas kitchensync as frontend in parallel
+there are of cours a lot of thing on my todo and my wishlist for opensync for the near futur the most import step is the __ releas of cours where we still have some miss featur in opensync as well as in the plugin
+one thing i would realli like to see is a thunderbird plugin for opensync i use thunderbird person and would realli like to keep my contact up to date with my cellular but i was not yet abl to find the time to implement it
+one thing that would realli rock in futur version of opensync is an automat hardwar detect mechan so when you plugin your palm or switch on your bluetooth devic opensync will creat a synchron group automat and ask the user to start sync to bring opensync to the level of _the sync solut tm_ we must reduc the necessari configur to a minimum
+what was the most dire problem you had to face when creat opensync and how did you face it
+fortun the problem which i person would consid to be dire are solv by the implement of opensync which is well hidden from the outsid world and they are an area i didnt work on
+i guess that i am the right person to answer this question then
+the most complic part of opensync is definit the format convers which is respons for convert the format of one devic to the format that anoth devic understand
+there are a lot of subsystem in this format convers that make it so complex like convers path search compar item detect of mime type and last but not least the convers itself so this was a hard piec of work
+what was the greatest moment for you
+i think the greatest moment was when after three day of concentr hack we had a first work version of the kde frontend for opensync this was at meet at the suse offic in nuernberg and we were abl to success do a small present and demo to a group of interest suse peopl
+i dont rememb a distinct greatest moment but what is a realli great feel is to see that a project catch on that other peopl get involv use the code you have written and improv it in way that you havent thought of initi
+hmm also hack on opensynckitchesync is much fun in general the greatest moment was when the new kitchensync frontend sync two directori via opensync the first time but it was also cool when we manag to get the irmc plugin work again after port it to opensync
+as we now know the worst problem you face and your greatest moment the onli one miss is what was your weirdest experi while work on opensync
+not direct relat to opensync but pretti weird was meet a cowork at the amsterdam airport when return from the last opensync meet i dont know how high the chanc is to meet somebodi you know on a big random airport not relat at all to the place where you or the other person live but it was quit surpris
+sinc my favorit languag is c i was alway confus how peopl can use plain c for such a project half the time your are busi with write code for allocatingfre memori area nevertheless armin did a great job and he is alway a help for solv strang c problem
+devic and program
+now id like to move on to some more specif question about current and plan abil of opensync as first ive got a person one
+i have an old ipod sit around here can i or will i be abl to use a program util opensync to synchron my calendar contact and music to it
+im not awar of ani ipod support for opensync up to now but if it doesnt exist yet whi not write it opensync make this easi this is a chanc for everybodi with the person desir to sync one devic or anoth to get involv
+i dont think that there is ipod support yet for opensync but it would definit be possibl to use opensync for this task so if someon would like to implement an ipod plugin i would be glad to help
+which other devic do you alreadi support
+at this time opensync support palm syncml and irmc capabl devic
+which program alreadi implement opensync and where can we check back to find new addit
+on the applic side there is support for evolut gnome and kontact with kitchensync kde on the frontend side and the backend side and some more i expect that further applic will adopt opensync onc the __ version is releas
+besid kitchensync there alreadi are a command line tool and a port of the multisync gui asid from the gui i would realli like to see opensync be use in other applic as well one possibl for exampl would to be integr opensync into evolut to give user the possibl to synchron their devic direct from this applic news can general be found on the opensync web site technic dive
+it is time to give the develop someth to devour too ill keep this as a short twicefold technic dive befor come to the takeoff question even though im sure there inform for a doublevolum book on technic subleti
+as first dive how did you integr opensync in kitchensync view from the code side
+opensync provid a c interfac we wrap this with a small c librari and put kitchensync on top due to the object orient natur of the opensync interfac this was quit easi
+recent i also start to write a dbus frontend for opensync this also is a nice way to integr opensync which provid a wide varieti of option regard program languag and system configur
+and for the second deeper dive
+can you give us a quick outlin of those inner work of opensync from the develop view which make opensync especi viabl for applic in sever differ desktop environ
+that realli a question for armin for those who are interest i would recommend to have a look at the opensync websit there is a nice white paper about the intern structur and function of opensync
+opensync consist of sever part
+first there is the plugin api which defin what function a plugin has to implement so that opensync can dlopen it there are _ type of plugin
+a sync plugin which can synchron a certain devic or applic and which provid function for the initi handl the connect to a devic and read and write item then there is a format plugin which defin a format and how to convert compar and detect it
+the next part is a set of helper function which are provid to eas to program of synchron plugin these helper function includ thing like handl plugin config file hashtabl which can be use to detect chang in set of item function to detect when a resync of devic is necessari etc
+the sync logic itself resid in the sync engin which is a separ part the sync engin is respons for decid when to call the connect function of a plugin when to read or write from it the engin also take care of invok the format convers function so that each plugin get the item in it requir format
+if you want more inform and detail about the inner work of opensync you should realli visit the opensyncorg websit or ask it develop
+to add some more spice for those of our reader whose interest you just manag to spawn or to skyrocket pleas tell us where they can get more inform on the opensync framework how they can best meet and help you and how they can help improv syncsupport for kde by help opensync
+again the opensync web site is the right sourc for inform regard the kde side the url mail list is probabl the right address at the moment the most import help would be everyth which get the opensync __ releas done
+and even though i alreadi said it it cant be repeat too often opensync will be the one unifi sync solut for the free desktop crossdevic crossplatform crossdesktop
+it the first time i feel well when think about sync
+regard opensync the best place to ask would be the opensync mail list at sourceforg or the opensync irc channel on the freenodenet server
+there are alway a lot of thing where we could need a help hand and where we would be realli glad to get some help so everyon who is interest in opensync is welcom to join
+mani thank for your time
+thank for do the interview it alway fun to talk about opensync becaus it realli the right thing
+thank you for take your time and do this interview i realli appreci your help
+thank for your work public and market is someth that is realli miss in the open sourc communiti we have nice softwar but nobodi know
+further inform on opensync can be found on the opensync websit this interview was done by arn babenhauserheid in april ____ via email and on behalf of himself the opensourc communiti spreadkdeorg and the dot it was first publish on the dot and is licens under the a pdfversion with pictur can be found at

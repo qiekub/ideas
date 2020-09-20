@@ -1,7 +1,17 @@
 {
   "dependencies": {
+    "@mozilla/readability": "^0.3.0",
+    "async": "^3.2.0",
+    "cheerio": "^1.0.0-rc.3",
+    "jsdom": "^16.4.0",
+    "md5": "^2.3.0",
+    "n-gram": "^1.1.2",
     "natural": "^2.1.5",
-    "snowball-german": "^1.0.0",
-    "stemmer_es": "^1.0.2"
+    "node-fetch": "^2.6.1",
+    "page-metadata-parser": "^1.1.4",
+    "shelljs": "^0.8.4",
+    "snowball": "^0.3.1",
+    "stopwords-iso": "^1.1.0",
+    "striptags": "^3.1.1"
   }
 }
