@@ -79,6 +79,7 @@ HEAD {
 
 rebase (branch-from, branch-to)
 merge (branch-from, branch-to)
+...
 
 ```
 
