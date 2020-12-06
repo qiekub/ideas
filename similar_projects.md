@@ -129,4 +129,20 @@ Direct link to the Google-Map: https://www.google.com/maps/d/u/0/viewer?mid=1ko6
 Safe restroom locations for trans, intersex, and gender nonconforming individuals.
 https://www.refugerestrooms.org/
 
+## City Guides all over the world (commercial oriented)
+"Your gay travel guide — Find LGBTQ friendly businesses and community events around the world"
+https://www.gaycities.com/
+
+## Directory of LGBTQ/SGM health professionals in America
+https://glmaimpak.networkats.com/members_online_new/members/dir_provider.asp
+
+---
+
+## smarticular.net
+Shop für Anleitungen und Tipps rund um ein einfaches und nachhaltiges Leben.
+https://smarticular.shop/
+
+## Mental Health Help (MHA)
+https://www.mhanational.org/self-help-tools
+
 
