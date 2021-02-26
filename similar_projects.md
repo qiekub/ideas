@@ -138,6 +138,17 @@ https://glmaimpak.networkats.com/members_online_new/members/dir_provider.asp
 
 ---
 
+# Networks
+
+## DBNA
+"Du bist nicht allein"
+https://www.dbna.com/
+
+## junx.app
+https://junx.app/
+
+---
+
 ## smarticular.net
 Shop für Anleitungen und Tipps rund um ein einfaches und nachhaltiges Leben.
 https://smarticular.shop/
