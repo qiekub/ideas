@@ -2,7 +2,7 @@
   "dependencies": {
     "@mozilla/readability": "^0.3.0",
     "async": "^3.2.2",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.12",
     "jsdom": "^16.5.0",
     "md5": "^2.3.0",
     "n-gram": "^1.1.2",
