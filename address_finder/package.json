@@ -6,7 +6,7 @@
     "jsdom": "^16.5.0",
     "md5": "^2.3.0",
     "n-gram": "^1.1.2",
-    "natural": "^2.1.5",
+    "natural": "^2.4.5",
     "node-fetch": "^3.2.10",
     "page-metadata-parser": "^1.1.4",
     "shelljs": "^0.8.5",
